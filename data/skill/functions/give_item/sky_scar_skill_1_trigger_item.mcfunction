@@ -1,0 +1,1 @@
+execute as sky_scar at @s run give @s magma_cream{display:{Lore:['{"italic":false,"text":"使用後會獲得 加速II 2秒並在五秒內攻擊時增加至175%攻擊力"}'],Name:'{"italic":false,"color":"red","text":"加速"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 1

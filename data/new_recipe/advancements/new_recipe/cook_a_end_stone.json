@@ -1,0 +1,34 @@
+{
+    "display": {
+        "title": {
+            "text": "J格是中秋節烤過的木炭還是白巧克力?",
+            "color": "white"
+        },
+        "description": {
+            "text": "利用熔爐將黑石燒製成終界石",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:end_stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": false
+    },
+    "parent": "new_recipe:new_recipe/root",
+    "criteria": {
+        "getblackstone": {
+            "trigger": "minecraft:impossible"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "getblackstone"
+        ]
+    ],
+    "rewards": {
+        "experience": 10
+    }
+}

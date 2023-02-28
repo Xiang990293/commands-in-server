@@ -1,0 +1,34 @@
+{
+    "display": {
+        "title": {
+            "text": "模擬河川侵蝕",
+            "color": "white"
+        },
+        "description": {
+            "text": "利用切石機將石頭切成鵝卵石",
+            "color": "green"
+        },
+        "icon": {
+            "item": "minecraft:stone"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "new_recipe:new_recipe/stonecut_a_deepslate",
+    "criteria": {
+        "getcobblestone": {
+            "trigger": "minecraft:impossible"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "getcobblestone"
+        ]
+    ],
+    "rewards": {
+        "experience": 10
+    }
+}
