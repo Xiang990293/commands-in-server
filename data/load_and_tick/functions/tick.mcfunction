@@ -14,12 +14,6 @@ execute if score world option_skill matches 1 run function skill:loop
 ##進度系統
 function new_recipe:loop
 
-#越風的寵物數量偵測
-execute store result bossbar minecraft:cat_count value run execute if entity @e[nbt={Owner:[I;-1909247764,-341161287,-1479027778,-73125948]}]
-execute store result score Xiang990293 cat_count run execute if entity @e[nbt={Owner:[I;-1909247764,-341161287,-1479027778,-73125948]}]
-bossbar set minecraft:cat_count name ["",{"text":"翔越風的寵物數量(","color":"gold"},{"score":{"name":"Xiang990293","objective":"cat_count"},"color":"gold"},{"text":"/","color":"gold"},{"score":{"name":"Xiang990293","objective":"cat_count_max"},"color":"gold"},{"text":")","color":"gold"}]
-execute store result bossbar minecraft:cat_count max run scoreboard players get Xiang990293 cat_count_max
-
 #物品展示框隱形
 execute as @e[type=item_frame,tag=invisiframe] run data merge entity @s {Invisible:1b}
 execute as @e[type=item_frame,tag=!invisiframe] run data merge entity @s {Invisible:0b}

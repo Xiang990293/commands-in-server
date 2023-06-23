@@ -1,6 +1,5 @@
-#創造模式額外效果
-##最強力量，一拳斃命
-execute if score world so_opic matches 1 run execute as @a[gamemode=creative] at @s run effect give @s strength 1 255 true
+#創造模式力量效果
+execute if score world so_opic matches 1 if entity @a[gamemode=!creative] run effect clear @a[gamemode=!creative] strength
 
 #冷卻條
 ##天痕
