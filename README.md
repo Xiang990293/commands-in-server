@@ -1,4 +1,4 @@
-# command_in_server-1.2
+# command_in_server
 the auxiliary datapack for private survival server, considering for publicing but not yet.
 
 ### Done
