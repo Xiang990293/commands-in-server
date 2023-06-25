@@ -19,8 +19,10 @@
     "parent": "new_recipe:new_recipe/stonecut_a_deepslate",
     "criteria": {
         "getcobblestone": {
-            "trigger": "minecraft:impossible"
-            }
+            "trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "new_recipe:cobbled_deepslate"
+			}
         }
     },
     "requirements": [

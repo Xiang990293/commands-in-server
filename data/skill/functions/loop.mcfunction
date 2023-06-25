@@ -56,13 +56,13 @@ execute if score world so_th matches 1 if score world tpcooldown matches 1.. run
 
 #偵測執行-觸發條件trigger
 ##天痕技能一
-execute as sky_scar at @s if score @s sss1c matches ..0 if entity @e[distance=..2,nbt={Item:{id:"minecraft:magma_cream",Count:1b,tag:{display:{Name:'{"italic":false,"color":"red","text":"加速"}'}}},OnGround:0b}] run function skill:sky_scar_skill_1/sky_scar_skill_1_trigger
+execute if entity sky_scar if score sky_scar sss1c matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_nirvana_trigger_item_check run function skill:sky_scar_skill_1/sky_scar_skill_1_trigger
 ##天痕必殺技
-execute as sky_scar at @s if score @s ssnc matches ..0 if entity @e[distance=..2,nbt={Item:{id:"minecraft:slime_ball",Count:1b,tag:{display:{Lore:['{"italic":false,"text":"使用後會在除了你以外最近的5位玩家，會在其位置召喚一隻高壓苦力怕"}'],Name:'{"italic":false,"color":"blue","text":"雷神"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]}}}] run function skill:sky_scar_nirvana/sky_scar_nirvana_trigger
+execute if entity sky_scar if score sky_scar ssnc matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_skill_1_trigger_item_check run function skill:sky_scar_nirvana/sky_scar_nirvana_trigger
 ##張博必殺技
-execute as FzMY at @s if score @s Fnc matches ..0 if entity @e[distance=..2,nbt={Item:{id:"minecraft:iron_ingot",Count:1b,tag:{display:{Lore:['{"italic":false,"text":"使用後會獲得10秒抗性V，並消除所有效果，冷卻時間80秒"}'],Name:'{"italic":false,"color":"red","text":"惡食"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]}}}] run function skill:fzmy_nirvana/fzmy_nirvana_trigger
+execute if entity FzMY if score FzMY Fnc matches ..0 at FzMY as @e[type=item,distance=..2] if predicate skill:fzmy_nirvana_trigger_item_check run function skill:fzmy_nirvana/fzmy_nirvana_trigger
 ##翔越風必殺技
-execute as Xiang990293 at @s if score Xiang990293 Xnc matches ..0 if entity @e[distance=..2,nbt={Item:{id:"minecraft:gray_glazed_terracotta",Count:1b,tag:{display:{Lore:['{"italic":false,"text":"使用後會召喚 喚魔者尖牙，自身獲得 回復II 及 緩速I 效果，冷卻30秒"}'],Name:'{"italic":false,"color":"red","text":"魔牙召喚"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]}}}] run function skill:xiang990293_nirvana/xiang990293_nirvana_trigger
+execute if entity Xiang990293 if score Xiang990293 Xnc matches ..0 at Xiang990293 as @e[type=item,distance=..2] if predicate skill:xiang990293_nirvana_trigger_item_check run function skill:xiang990293_nirvana/xiang990293_nirvana_trigger
 
 #觸發條件恢復
 ##天痕技能一--岩漿球
@@ -76,14 +76,14 @@ execute as Xiang990293 if score @s Xnc matches 20 run function skill:give_item/x
 
 ##傳送殿堂觸發條件偵測
 ###傳送殿堂永久區塊
-execute at @e[tag=tphall] run forceload add ~ ~
+#execute as @e[tag=tphall] at @s run forceload add ~ ~
 ###傳送殿堂回收紙
 execute at @e[type=minecraft:armor_stand,tag=tphall] as @a[distance=13..20] run clear @s paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]}
 ###傳送殿堂給紙
 execute as @a at @s store result score @s tppaper run clear @s paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 0
-execute if score world tpcooldown matches ..30 as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @a[distance=..13,scores={tppaper=0},sort=nearest,limit=1] run function skill:teleport_hall/detect_inventory
-execute if score world tpcooldown matches ..30 as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @a[distance=..13,scores={tppaper=2..},sort=nearest,limit=1] run clear @a[distance=..13,scores={tppaper=2..},sort=nearest,limit=1] paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 1
-execute if score world tpcooldown matches 31.. as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @a[distance=..13,scores={tppaper=1..},sort=nearest,limit=1] run clear @a[distance=..13,scores={tppaper=1..},sort=nearest,limit=1] paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 1
+execute if score world tpcooldown matches ..30 as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @s[distance=..13,scores={tppaper=0}] if predicate skill:inventory_empty_space_check run function skill:teleport_hall/give_teleport_item
+execute if score world tpcooldown matches ..30 as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @s[distance=..13,scores={tppaper=2..}] run clear @a[distance=..13,scores={tppaper=2..},sort=nearest,limit=1] paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 1
+execute if score world tpcooldown matches 31.. as @e[type=minecraft:armor_stand,tag=tphall] at @s if entity @s[distance=..13,scores={tppaper=1..}] run clear @a[distance=..13,scores={tppaper=1..},sort=nearest,limit=1] paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]} 1
 ###傳送範圍內的人給標籤(readytotp)
 execute as @e[type=minecraft:armor_stand,tag=tphall] at @s run tag @a[distance=..8] add readytotp
 ###傳送範圍內的人撤標籤(readytotp)

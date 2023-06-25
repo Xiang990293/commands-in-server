@@ -1,0 +1,14 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:item",
+		"nbt": "{Item:{id:\"minecraft:slime_ball\",Count:1b,tag:{display:{Lore:['{\"italic\":false,\"text\":\"使用後會在除了你以外最近的5位玩家，會在其位置召喚一隻高壓苦力怕\"}'],Name:'{\"italic\":false,\"color\":\"blue\",\"text\":\"雷神\"}'},Enchantments:[{lvl:1s,id:\"minecraft:infinity\"},{lvl:1s,id:\"minecraft:mending\"}]}}}",
+		"distance":	{
+			"absolute": {
+				"min": 0,
+				"max": 2
+			}
+		}
+	}
+}

@@ -15,14 +15,17 @@
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
+    
     },
-    "parent": "new_recipe:new_recipe/root",
-    "criteria": {
+	"parent": "new_recipe:new_recipe/cook_a_blackstone",
+	"criteria": {
         "getblackstone": {
-            "trigger": "minecraft:impossible"
-            }
-        }
-    },
+			"trigger": "minecraft:recipe_crafted",
+			"conditions": {
+				"recipe_id": "new_recipe:end_stone"
+			}
+		}
+	},
     "requirements": [
         [
             "getblackstone"

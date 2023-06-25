@@ -1,1 +1,0 @@
-execute as @a if predicate skill:inventory_empty_space_check run function skill:teleport_hall/give_teleport_item

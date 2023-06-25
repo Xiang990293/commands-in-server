@@ -1,0 +1,14 @@
+{
+	"condition": "minecraft:entity_properties",
+	"entity": "this",
+	"predicate": {
+		"type": "minecraft:item",
+		"nbt": "{Item:{id:\"minecraft:magma_cream\",Count:1b,tag:{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"加速\"}'}}},OnGround:0b}",
+		"distance":	{
+			"absolute": {
+				"min": 0,
+				"max": 2
+			}
+		}
+	}
+}
