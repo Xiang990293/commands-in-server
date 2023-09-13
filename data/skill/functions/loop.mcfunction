@@ -76,7 +76,7 @@ execute as Xiang990293 if score @s Xnc matches 20 run function skill:give_item/x
 
 ##傳送殿堂觸發條件偵測
 ###傳送殿堂永久區塊
-#execute as @e[tag=tphall] at @s run forceload add ~ ~
+#execute as @e[tag=tphall,type=armor_stand] at @s run forceload add ~ ~
 ###傳送殿堂回收紙
 execute at @e[type=minecraft:armor_stand,tag=tphall] as @a[distance=13..20] run clear @s paper{display:{Lore:['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],Name:'{"italic":false,"color":"aqua","text":"傳送卷軸"}'},Enchantments:[{lvl:1s,id:"minecraft:infinity"},{lvl:1s,id:"minecraft:mending"}]}
 ###傳送殿堂給紙
@@ -95,7 +95,7 @@ execute at @e[type=minecraft:armor_stand,tag=tphall] as @e[distance=8..13,type=i
 
 ###將傳送用盔甲座隱形
 execute as @e[tag=maintphall,type=armor_stand] run data merge entity @s {Invisible:1b}
-execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invisible:1}
+execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invisible:1b}
 ###使傳送用盔甲座無敵
 execute as @e[tag=maintphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}
 execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}

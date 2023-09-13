@@ -26,9 +26,12 @@ gamerule commandBlockOutput false
 #新配方進度載入
 function new_recipe:initialize
 
-#計算啟動次數
-scoreboard objectives add execute_count dummy
-execute unless score world execute_count matches 1.. run scoreboard players set world execute_count 0
+#設定載入
+
+#版本號
+#world execute_count => world pack_version 1
+scoreboard objectives add pack_version dummy
+execute unless score 2-1 pack_version matches 1
 scoreboard players add world execute_count 1
 
 #貓咪數量檢測用記分板
@@ -40,3 +43,5 @@ execute if score world execute_count matches 1 run bossbar set minecraft:cat_cou
 execute if score world execute_count matches 1 run bossbar set minecraft:cat_count players Xiang990293
 scoreboard objectives add cat_count_max dummy
 execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 200
+
+#依照版本號載入

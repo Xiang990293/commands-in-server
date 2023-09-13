@@ -15,8 +15,11 @@ execute if score world option_skill matches 1 run function skill:loop
 function new_recipe:loop
 
 #物品展示框隱形
-execute as @e[type=item_frame,tag=invisiframe] run data merge entity @s {Invisible:1b}
-execute as @e[type=item_frame,tag=!invisiframe] run data merge entity @s {Invisible:0b}
+execute as @e[type=item_frame,tag=invisiframe,nbt={Invisible:0b}] run data merge entity @s {Invisible:1b}
+execute as @e[type=item_frame,tag=invisiframe,nbt={Invisible:1b}] run tag @s remove invisiframe
+#物品展示框顯形
+execute as @e[type=item_frame,tag=visiframe,nbt={Invisible:1b}] run data merge entity @s {Invisible:0b}
+execute as @e[type=item_frame,tag=visiframe,nbt={Invisible:0b}] run tag @s remove visiframe
 
 #筆記
 #bossbar set minecraft:cat_count name ["",{"text":"翔越風的寵物數量(","color":"gold"},{"score":{"name":"Xiang990293","objective":"cat_count"},"color":"gold"},{"text":"/100)","color":"gold"}]
