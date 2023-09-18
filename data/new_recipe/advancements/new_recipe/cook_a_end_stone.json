@@ -1,8 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "被炭燒成白巧克力",
-            "color": "white"
+            "text": "被炭燒成白巧克力"
         },
         "description": {
             "text": "利用熔爐將黑石燒製成終界石",
@@ -15,7 +14,6 @@
         "show_toast": true,
         "announce_to_chat": true,
         "hidden": false
-    
     },
 	"parent": "new_recipe:new_recipe/cook_a_blackstone",
 	"criteria": {
