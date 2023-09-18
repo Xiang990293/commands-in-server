@@ -1,0 +1,14 @@
+{
+	"criteria": {
+		"test": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"slots": {
+					"occupied": {
+						"min": 36
+					}
+				}
+			}
+		}
+	}
+}

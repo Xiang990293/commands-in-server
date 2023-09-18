@@ -1,5 +1,7 @@
 {
     "values": [
-        "load_and_tick:tick"
+        "load_and_tick:tick",
+		"teleport_hall:tick",
+		"skill:tick"
     ]
 }
