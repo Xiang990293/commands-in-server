@@ -10,5 +10,8 @@
 				}
 			}
 		}
+	},
+	"rewards": {
+		"function": "teleport_hall:teleport_to"
 	}
 }

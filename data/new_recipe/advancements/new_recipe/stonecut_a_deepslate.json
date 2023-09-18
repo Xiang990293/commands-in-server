@@ -19,9 +19,9 @@
     "parent": "new_recipe:new_recipe/root",
     "criteria": {
         "getcobbleddeepslate": {
-            "trigger": "minecraft:recipe_crafted",
+            "trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe_id": "new_recipe:cobblestone"
+				"recipe": "new_recipe:cobbled_deepslate"
 			}
         }
     },

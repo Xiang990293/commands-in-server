@@ -1,7 +1,7 @@
 {
     "display": {
         "title": {
-            "text": "J格是中秋節烤過的木炭還是白巧克力?",
+            "text": "被炭燒成白巧克力",
             "color": "white"
         },
         "description": {
@@ -19,16 +19,16 @@
     },
 	"parent": "new_recipe:new_recipe/cook_a_blackstone",
 	"criteria": {
-        "getblackstone": {
-			"trigger": "minecraft:recipe_crafted",
+        "getendstone": {
+			"trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe_id": "new_recipe:end_stone"
+				"recipe": "new_recipe:end_stone"
 			}
 		}
 	},
     "requirements": [
         [
-            "getblackstone"
+            "getendstone"
         ]
     ],
     "rewards": {
