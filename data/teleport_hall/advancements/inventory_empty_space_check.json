@@ -5,13 +5,13 @@
 			"conditions": {
 				"slots": {
 					"occupied": {
-						"min": 36
+						"min": 35
 					}
 				}
 			}
 		}
 	},
 	"rewards": {
-		"function": "teleport_hall:teleport_to"
+		"function": "teleport_hall:advancement_inventory_checker"
 	}
 }

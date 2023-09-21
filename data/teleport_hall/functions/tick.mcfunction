@@ -1,8 +1,4 @@
-#創造模式力量效果
-execute if score world so_opic matches 1 if entity @a[gamemode=!creative] run effect clear @a[gamemode=!creative] strength
-
 #冷卻條
-###傳送的冷卻條狀態
 execute if score world tpcooldown matches 0 run bossbar set minecraft:tp_cooldown visible false
 execute if score world so_th matches 0 run bossbar set minecraft:tp_cooldown visible false
 execute if score world so_th matches 1 if score world tpcooldown matches 1.. run bossbar set minecraft:tp_cooldown visible true
@@ -38,13 +34,3 @@ execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invisible:1
 ###使傳送用盔甲座無敵
 execute as @e[tag=maintphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}
 execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}
-
-#判斷背包空位用的東東(是監測變化，只要有36格以上欄位，就會觸發teleport_hall:inventory_check)
-# data modify storage foo:bar Items set from entity @s Inventory
-# data remove storage foo:bar Items[{Slot:-106b}]
-# data remove storage foo:bar Items[{Slot:103b}]
-# data remove storage foo:bar Items[{Slot:102b}]
-# data remove storage foo:bar Items[{Slot:101b}]
-# data remove storage foo:bar Items[{Slot:100b}]
-# execute store result score Count a_score if data storage foo:bar Items[]
-# execute if score Count a_score matches 36 run say I am full
