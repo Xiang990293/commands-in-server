@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+	  "bab",
+	  "c  "
+	],
+	"key": {
+	  "a": {
+		"item": "minecraft:phantom_membrane"
+	  },
+	  "b": {
+		"item": "minecraft:amethyst_shard"
+	  },
+	  "c": {
+		"item": "minecraft:end_rod"
+	  }
+	},
+	"result": {
+	  "item": "minecraft:knowledge_book"
+	}
+  }
+  

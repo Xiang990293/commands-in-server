@@ -1,0 +1,18 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:location",
+		"conditions": {
+		  "player": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "invisi_assistant:invisiable_check"
+			}
+		  ]
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "invisi_assistant:finder_start"
+	}
+  }

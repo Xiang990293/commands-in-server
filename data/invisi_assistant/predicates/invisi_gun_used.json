@@ -1,0 +1,21 @@
+{
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:reference",
+			"name": "invisi_assistant:gun_on_hand"
+		},
+	  	{
+		"condition": "minecraft:value_check",
+		"value": {
+		  "type": "minecraft:score",
+		  "target": "this",
+		  "score": "carrot_stick_used"
+		},
+		"range": {
+		  "min": 1
+		}
+	  }
+	]
+  }
+  

@@ -1,18 +1,17 @@
 {
     "display": {
         "title": {
-            "text": "Xiang990293 伺服器擴充資源包！",
-            "color": "white"
-        },
+			"text": "111111"
+		},
         "description": {
-            "text": "成功安裝資料包",
+            "text": "2222",
             "color": "blue"
         },
         "icon": {
-            "item": "minecraft:redstone"
+            "item": "minecraft:air"
         },
         "frame": "task",
-        "show_toast": false,
+        "show_toast": true,
         "announce_to_chat": false,
         "hidden": false,
         "background": "minecraft:textures/block/cobblestone.png"

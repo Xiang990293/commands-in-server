@@ -1,8 +1,7 @@
 {
 	"display": {
 		"title": {
-			"text": "J格是中秋節的木炭還是黑巧克力?",
-			"color": "white"
+			"text": "炭烤黑巧克力"
 		},
 		"description": {
 			"text": "利用高爐將鵝卵石燒製成黑石",
@@ -18,16 +17,16 @@
 	},
 	"parent": "new_recipe:new_recipe/root",
 	"criteria": {
-		"getendstone": {
-			"trigger": "minecraft:recipe_crafted",
+		"getblackstone": {
+			"trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe_id": "new_recipe:blackstone"
+				"recipe": "new_recipe:blackstone"
 			}
 		}
 	},
 	"requirements": [
 		[
-			"getendstone"
+			"getblackstone"
 		]
 	],
 	"rewards": {

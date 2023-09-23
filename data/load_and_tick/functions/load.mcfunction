@@ -1,12 +1,12 @@
 tellraw @a [{"text":"||","color":"gray"},{"text":"                         成功套用伺服器擴充資料包!                         ","color":"yellow"},{"text":"||","color":"gray"}]
 tellraw @a [{"text":"||","color":"gray"},{"text":"                  掛機偵測器","color":"red"},{"text":"由","color":"yellow"},{"text":" 虛樗(SY91419) ","color":"blue"},{"text":"獨立製作                  ","color":"yellow"},{"text":"||","color":"gray"}]
-#tellraw @a [{"text":"||","color":"gray"},{"text":"                 Dinnerbone唱片機由 ","color":"yellow"},{"text":"Phoenix sc","color":"aqua"},{"text":" 獨立製作             ","color":"yellow"},{"text":"||","color":"gray"}]
-#tellraw @a [{"text":"||","color":"gray"},{"text":"      由","color":"yellow"},{"text":" u/TheManOutOfReddit ","color":"aqua"},{"text":"發想     ","color":"yellow"},{"text":"||","color":"gray"}]
-tellraw @a [{"text":"||","color":"gray"},{"text":"                   版本1.0.0  ","color":"gray"},{"text":"作者:","color":"yellow"},{"text":"Xiang990293","color":"aqua"},{"text":"翔越風                   ","color":"blue"},{"text":"||","color":"gray"}]
-##預覽：/tellraw @a [{"text":"||","color":"gray"},{"text":"1234567890123456789012345678901234567890123456789012","color":"aqua"},{"text":"||","color":"gray"}]
+tellraw @a [{"text":"||","color":"gray"},{"text":"                 Dinnerbone唱片機由 ","color":"yellow"},{"text":"Phoenix sc","color":"aqua"},{"text":" 獨立製作             ","color":"yellow"},{"text":"||","color":"gray"}]
+tellraw @a [{"text":"||","color":"gray"},{"text":"      由","color":"yellow"},{"text":" u/TheManOutOfReddit ","color":"aqua"},{"text":"發想     ","color":"yellow"},{"text":"||","color":"gray"}]
+tellraw @a [{"text":"||","color":"gray"},{"text":"                   版本2.0.0  ","color":"gray"},{"text":"作者:","color":"yellow"},{"text":"Xiang990293","color":"aqua"},{"text":"翔越風                   ","color":"blue"},{"text":"||","color":"gray"}]
+#/tellraw @a [{"text":"","color":"gray"},{"text":"1234567890123456789012345678901234567890123456789012","color":"aqua"},{"text":"||","color":"gray"}]
 #||      成功套用伺服器擴充資料包!      ||
 #|| 掛機偵測器由 虛樗(SY91419) 個人製作 ||
-#||  版本1.0.0  作者:Xiang990293翔越風  ||
+#||  版本2.0.0  作者:Xiang990293翔越風  ||
 #|| Dinnerbone 唱片機由 Phoenix sc 獨立製作 ||
 #||     由 u/TheManOutOfReddit 發想     ||
 #初始化
