@@ -1,5 +1,8 @@
 {
     "values": [
-        "load_and_tick:load"
+        "teleport_hall:load",
+		"skill:load",
+		"invisi_assistant:load",
+		"new_recipe:load"
     ]
 }

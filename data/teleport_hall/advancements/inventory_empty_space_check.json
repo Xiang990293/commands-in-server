@@ -1,0 +1,17 @@
+{
+	"criteria": {
+		"test": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+				"slots": {
+					"occupied": {
+						"min": 35
+					}
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "teleport_hall:advancement_inventory_checker"
+	}
+}
