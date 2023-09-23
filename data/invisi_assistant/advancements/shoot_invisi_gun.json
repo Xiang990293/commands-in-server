@@ -1,0 +1,19 @@
+{
+	"criteria": {
+	  "shoot_invisi_gun": {
+		"trigger": "minecraft:location",
+		"conditions": {
+		  "player": [
+			{
+			  "condition": "minecraft:reference",
+			  "name": "invisi_assistant:invisi_gun_used"
+			}
+		  ]
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "invisi_assistant:display_invisiable_entity"
+	}
+  }
+  

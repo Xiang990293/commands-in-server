@@ -1,0 +1,14 @@
+{
+	"criteria": {
+	  "get_gun_recipe": {
+		"trigger": "minecraft:recipe_unlocked",
+		"conditions": {
+		  "recipe": "invisi_assistant:gun"
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "invisi_assistant:give_gun"
+	}
+  }
+  

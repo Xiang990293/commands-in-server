@@ -1,0 +1,3 @@
+scoreboard objectives add is_found dummy
+scoreboard objectives add found_count dummy
+scoreboard objectives add carrot_stick_used minecraft.used:minecraft.carrot_on_a_stick

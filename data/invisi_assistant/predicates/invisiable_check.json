@@ -1,9 +1,25 @@
 {
+	"condition": "minecraft:all_of",
+	"terms": [
+		{
+			"condition": "minecraft:reference",
+			"name": "invisi_assistant:gun_on_hand"
+		},
+	  	{
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-	  "targeted_entity": {
-		"type": "#invisi_asistant:invisiable"
-	  	}
+		"type": "minecraft:player",
+		"type_specific": {
+			"type": "player",
+			"looking_at": {
+				"type": "#invisi_assistant:invisiable"
+			}
+		},
+		"flags": {
+			"is_sneaking": true
+		}
 	}
 }
+	]
+  }

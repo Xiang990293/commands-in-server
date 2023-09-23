@@ -1,1 +1,1 @@
-{"teleport_hall":{"$adv":{"inventory_empty_space_check":["test"]}}}
+{"teleport_hall":{"$adv":{"inventory_empty_space_check":["test"]}},"invisi_assistant":{"$adv":{"invisiable_checker":["requirement"],"shoot_invisi_gun":["shoot_invisi_gun"],"get_gun_recipe":["get_gun_recipe"]}}}
