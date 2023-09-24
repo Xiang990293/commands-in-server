@@ -1,5 +1,7 @@
 advancement revoke @s only invisi_assistant:shoot_invisi_gun
 scoreboard players reset @s carrot_stick_used
+execute run function invisi_assistant:durability_calculator {"Damage":"2"}
+playsound minecraft:ui.button.click block @p ~ ~ ~ 1 1.2
 particle end_rod ~ ~0.3 ~ 1.0 0 0.0 1 0
 particle end_rod ~ ~0.3 ~ 0.9998476951563913 0 0.01745240643728351 1 0
 particle end_rod ~ ~0.3 ~ 0.9993908270190958 0 0.03489949670250097 1 0
@@ -359,4 +361,8 @@ particle end_rod ~ ~0.3 ~ 0.9961946980917455 0 -0.08715574274765832 1 0
 particle end_rod ~ ~0.3 ~ 0.9975640502598242 0 -0.06975647374412564 1 0
 particle end_rod ~ ~0.3 ~ 0.9986295347545738 0 -0.05233595624294437 1 0
 particle end_rod ~ ~0.3 ~ 0.9993908270190958 0 -0.034899496702500823 1 0
-execute at @s as @e[distance=..10,type=#invisi_assistant:invisiable] at @s run particle end_rod ~ ~0.3 ~ 0.01 0.01 0.01 0.01 1000
+execute as @e[distance=..10,type=#invisi_assistant:invisiable] at @s run particle end_rod ~ ~0.3 ~ 0.01 0.01 0.01 0.01 10 force
+execute as @e[distance=..10,type=#invisi_assistant:invisiable] at @s run data merge entity @s {Glowing:1b}
+tag @s add is_displaying
+schedule function invisi_assistant:unglow 1s
+execute if data entity @s SelectedItem.tag.deltaDamage run function invisi_assistant:break_check

@@ -1,3 +1,5 @@
 scoreboard objectives add is_found dummy
 scoreboard objectives add found_count dummy
 scoreboard objectives add carrot_stick_used minecraft.used:minecraft.carrot_on_a_stick
+scoreboard objectives add custom_damage_invisi_gun dummy
+scoreboard players set 25 custom_damage_invisi_gun 25
