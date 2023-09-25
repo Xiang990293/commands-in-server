@@ -10,4 +10,4 @@ item modify entity @s weapon.mainhand invisi_assistant:durability_calculate
 execute store result score @s custom_damage_invisi_gun run data get entity @s SelectedItem.tag.Durability 1
 execute if score @s custom_damage_invisi_gun matches 0 run item replace entity @s weapon.mainhand with air
 execute if score @s custom_damage_invisi_gun matches 0 run playsound entity.item.break master @s ~ ~ ~ 1
-execute if score @s custom_damage_invisi_gun matches 0 run particle item carrot_on_a_stick ~ ~ ~ .3 .3 .3 0 25
+execute if score @s custom_damage_invisi_gun matches 0 run particle item carrot_on_a_stick ~ ~1 ~ .3 .3 .3 0 25
