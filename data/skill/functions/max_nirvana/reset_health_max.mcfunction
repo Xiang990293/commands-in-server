@@ -1,0 +1,1 @@
+$execute as @e[distance=10..30] run attribute @s generic.max_health base set $(health)

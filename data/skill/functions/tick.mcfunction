@@ -25,6 +25,12 @@ execute if score Xiang990293 Xnc matches 0 run bossbar set minecraft:xiang990293
 execute if score world so_xn matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
 execute if score world so_xn matches 1 if score Xiang990293 Xnc matches 1.. run bossbar set minecraft:xiang990293_nirvana_cooldown visible true
 execute store result bossbar minecraft:xiang990293_nirvana_cooldown value run scoreboard players get Xiang990293 Xnc
+##家緯
+###必殺技的冷卻條狀態
+execute if score Xiang990293 Xnc matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
+execute if score world so_xn matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
+execute if score world so_xn matches 1 if score Xiang990293 Xnc matches 1.. run bossbar set minecraft:xiang990293_nirvana_cooldown visible true
+execute store result bossbar minecraft:xiang990293_nirvana_cooldown value run scoreboard players get Xiang990293 Xnc
 
 #張博必殺技每日剩餘使用次數狀態(早上六點重製)
 #execute store result bossbar minecraft:fzmy_nirvana_day_use value run scoreboard players get FzMY Fndu

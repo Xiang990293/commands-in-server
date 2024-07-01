@@ -1,32 +1,40 @@
-#冷卻用
 scoreboard objectives add sss1c dummy
-execute if score world execute_count matches 1 run scoreboard players set sky_scar sss1c 0
-scoreboard objectives add ssnc dummy
-execute if score world execute_count matches 1 run scoreboard players set sky_scar ssnc 0
-scoreboard objectives add Fnc dummy
-execute if score world execute_count matches 1 run scoreboard players set FzMY Fnc 0
-scoreboard objectives add Xnc dummy
-execute if score world execute_count matches 1 run scoreboard players set Xiang990293 Xnc 0
-scoreboard objectives add tpcooldown dummy
-execute if score world execute_count matches 1 run scoreboard players set world tpcooldown 0
-
-#冷卻條用
+# execute if score world execute_count matches 1 run scoreboard players set sky_scar sss1c 0
 bossbar add sky_scar_skill_1_cooldown {"text":"deja vu加速爆擊 冷卻","color":"blue"}
 bossbar set sky_scar_skill_1_cooldown color blue
 bossbar set sky_scar_skill_1_cooldown players sky_scar
 bossbar set sky_scar_skill_1_cooldown max 160
+
+scoreboard objectives add ssnc dummy
+# execute if score world execute_count matches 1 run scoreboard players set sky_scar ssnc 0
 bossbar add sky_scar_nirvana_cooldown {"text":"雷神 冷卻","color":"blue"}
 bossbar set sky_scar_nirvana_cooldown color blue
 bossbar set sky_scar_nirvana_cooldown players sky_scar
 bossbar set sky_scar_nirvana_cooldown max 600
-bossbar add xiang990293_nirvana_cooldown {"text":"魔牙召喚 冷卻","color":"red"}
-bossbar set xiang990293_nirvana_cooldown color red
-bossbar set xiang990293_nirvana_cooldown players Xiang990293
-bossbar set xiang990293_nirvana_cooldown max 600
+
+scoreboard objectives add Fnc dummy
+# execute if score world execute_count matches 1 run scoreboard players set FzMY Fnc 0
 bossbar add fzmy_nirvana_cooldown {"text":"惡食 冷卻","color":"red"}
 bossbar set fzmy_nirvana_cooldown color red
 bossbar set fzmy_nirvana_cooldown players FzMY
 bossbar set fzmy_nirvana_cooldown max 1600
+
+scoreboard objectives add Xnc dummy
+# execute if score world execute_count matches 1 run scoreboard players set Xiang990293 Xnc 0
+bossbar add xiang990293_nirvana_cooldown {"text":"魔牙召喚 冷卻","color":"red"}
+bossbar set xiang990293_nirvana_cooldown color red
+bossbar set xiang990293_nirvana_cooldown players Xiang990293
+bossbar set xiang990293_nirvana_cooldown max 600
+
+scoreboard objectives add Mnc dummy
+scoreboard objectives add max_trigger_throw minecraft.dropped:minecraft.redstone_block
+bossbar add max_chen504_nirvana_cooldown {"text":"奧特炸彈 冷卻","color":"yellow"}
+bossbar set max_chen504_nirvana_cooldown color yellow
+bossbar set max_chen504_nirvana_cooldown players maxchen504
+bossbar set max_chen504_nirvana_cooldown max 600
+
+scoreboard objectives add tpcooldown dummy
+# execute if score world execute_count matches 1 run scoreboard players set world tpcooldown 0
 bossbar add tp_cooldown {"text":"傳送 冷卻","color":"blue"}
 bossbar set tp_cooldown color purple
 bossbar set tp_cooldown players @a
@@ -70,3 +78,6 @@ execute if score world execute_count matches 1 run scoreboard players set world 
 #防爆用
 scoreboard objectives add mobgriefing dummy
 execute store result score world mobgriefing run gamerule mobGriefing
+
+#將生命值改回預設值用
+scoreboard objectives add health_default dummy

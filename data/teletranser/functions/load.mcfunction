@@ -1,0 +1,1 @@
+scoreboard objectives add checking_slot_teletran dummy
