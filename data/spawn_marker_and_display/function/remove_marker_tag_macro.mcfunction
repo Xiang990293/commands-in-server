@@ -1,0 +1,1 @@
+$tag @s remove $(removing_tag)

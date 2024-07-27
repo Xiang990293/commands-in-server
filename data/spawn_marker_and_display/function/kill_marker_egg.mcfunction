@@ -1,0 +1,1 @@
+give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["kill_marker"]},item_name='{"text":"刪除 marker"}',lore=['"刪除三格以內最近的marker"']] 1

@@ -1,0 +1,13 @@
+# J
+setblock ~2 ~1 ~ observer[facing=up]
+setblock ~3 ~1 ~ observer[facing=up]
+setblock ~4 ~1 ~ observer[facing=up]
+setblock ~5 ~1 ~ observer[facing=up]
+setblock ~13 ~1 ~ observer[facing=up]
+setblock ~22 ~1 ~ observer[facing=up]
+setblock ~31 ~1 ~ observer[facing=up]
+setblock ~40 ~1 ~ observer[facing=up]
+setblock ~49 ~1 ~ observer[facing=up]
+setblock ~58 ~1 ~ observer[facing=up]
+setblock ~65 ~1 ~ observer[facing=up]
+setblock ~66 ~1 ~ observer[facing=up]

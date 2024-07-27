@@ -15,7 +15,7 @@ function afk:start
 ##物品消除系統
 function items_manager:initialize
 ##技能、大招與必殺技
-function skill:initialize
+function skill:load
 
 #計算一天已過幾刻用，早上六點為零
 scoreboard objectives add daytime dummy
@@ -24,7 +24,7 @@ scoreboard objectives add daytime dummy
 gamerule commandBlockOutput false
 
 #新配方進度載入
-function new_recipe:initialize
+function new_recipe:load
 
 #設定載入
 
@@ -45,3 +45,6 @@ scoreboard objectives add cat_count_max dummy
 execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 200
 
 #依照版本號載入
+
+#數學計算使用
+scoreboard objectives add math dummy

@@ -8,7 +8,7 @@
             "color": "green"
         },
         "icon": {
-            "item": "minecraft:end_stone"
+            "id": "minecraft:end_stone"
         },
         "frame": "task",
         "show_toast": true,

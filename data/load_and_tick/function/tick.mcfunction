@@ -10,7 +10,7 @@ execute if score world option_dinner matches 1 run function dinnerbone_jukebox:m
 ##掉落物品管理員
 execute if score world option_item_mana matches 1 run function items_manager:loop
 ##進度系統
-function new_recipe:loop
+function new_recipe:tick
 
 
 #筆記

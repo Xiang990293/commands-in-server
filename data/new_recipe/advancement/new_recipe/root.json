@@ -9,7 +9,7 @@
             "color": "blue"
         },
         "icon": {
-            "item": "minecraft:redstone"
+            "id": "minecraft:redstone"
         },
         "frame": "task",
         "show_toast": false,

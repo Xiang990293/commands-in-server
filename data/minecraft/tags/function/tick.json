@@ -4,6 +4,7 @@
 		"skill:tick",
 		"invisi_assistant:tick",
 		"new_recipe:tick",
-		"teletranser:tick"
+		"teletranser:tick",
+		"spawn_marker_and_display:tick"
     ]
 }

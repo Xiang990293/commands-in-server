@@ -8,7 +8,7 @@
 			"color": "green"
 		},
 		"icon": {
-			"item": "minecraft:blackstone"
+			"id": "minecraft:blackstone"
 		},
 		"frame": "task",
 		"show_toast": true,
