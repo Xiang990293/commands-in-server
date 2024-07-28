@@ -1,0 +1,1 @@
+summon minecraft:villager ~ ~ ~ {Invulnerable: 1b,  NoAI: 1b, Age: 0, Health: 1024.0f, LeftHanded: 1b, OnGround: 1b, Offers: {Recipes: [{maxUses: 2147483647, sell: {count: 1, id: "minecraft:knowledge_book"}, buy: {count: 1, id: "minecraft:white_wool"}, rewardExp: 0b}]}, Rotation: [0f, 0f], VillagerData: {profession: "minecraft:librarian", level: 6, type: "minecraft:plains"}}

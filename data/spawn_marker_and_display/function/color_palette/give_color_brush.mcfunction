@@ -1,0 +1,1 @@
+give @s brush[lore=['{"italic":false,"text":"拿在手上時，顯示顏色預覽"}'],item_name='{"italic":false,"text":"調色筆刷"}',enchantments={levels:{infinity:1,mending:1}},custom_data={color:"black"}]
