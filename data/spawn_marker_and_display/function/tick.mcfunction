@@ -8,3 +8,9 @@ execute as @e[type=villager,tag=remove_marker_tag] run data modify storage spawn
 execute as @e[type=villager,tag=remove_marker_tag] at @s as @n[type=marker,distance=..3] run function spawn_marker_and_display:remove_marker_tag_macro with storage spawn_marker_and_display:remove_marker_tag
 kill @e[type=villager,tag=remove_marker_tag]
 
+execute as @e[type=villager,tag=spawn_item_display] at @s summon item_display run data modify entity @s item set from entity @p Inventory[{Slot:-106b}]
+kill @e[type=villager,tag=spawn_item_display]
+execute as @e[type=villager,tag=kill_item_display] at @s run kill @n[type=item_display,distance=..3]
+kill @e[type=villager,tag=kill_item_display]
+# kill_item_display
+# execute as @e[type=villager,tag=spawn_item_display] at @s summon item_display run data modify entity @s block_state.Name set from entity @p Inventory[{Slot:-106b}].id

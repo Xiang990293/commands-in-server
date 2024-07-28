@@ -1,0 +1,373 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:healing"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_potion",
+              "id": "minecraft:strong_healing"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.01,
+                "max": 0.05
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "offhand": {
+                      "items": "minecraft:shield"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "mainhand": {
+                      "items": "minecraft:shield"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_boots",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 0,
+                  "max": 4
+                },
+                "minecraft:unbreaking": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "feet": {
+                      "items": "minecraft:netherite_boots"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_leggings",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:unbreaking": {
+                  "min": 0,
+                  "max": 3
+                },
+                "minecraft:protection": {
+                  "min": 0,
+                  "max": 4
+                }
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "legs": {
+                      "items": "minecraft:netherite_leggings"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_chestplate",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 0,
+                  "max": 4
+                },
+                "minecraft:unbreaking": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "chest": {
+                      "items": "minecraft:netherite_chestplate"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:netherite_helmet",
+          "weight": 1,
+          "quality": 3,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "min": 0.05,
+                "max": 0.25
+              }
+            },
+            {
+              "function": "minecraft:set_enchantments",
+              "enchantments": {
+                "minecraft:protection": {
+                  "min": 0,
+                  "max": 4
+                },
+                "minecraft:unbreaking": {
+                  "min": 0,
+                  "max": 3
+                }
+              }
+            }
+          ],
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "type": "minecraft:player",
+                  "distance": {
+                    "x": {
+                      "min": 0,
+                      "max": 5
+                    },
+                    "y": {
+                      "min": 0,
+                      "max": 2
+                    },
+                    "z": {
+                      "min": 0,
+                      "max": 5
+                    }
+                  },
+                  "equipment": {
+                    "head": {
+                      "items": "minecraft:netherite_helmet"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

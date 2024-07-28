@@ -1,0 +1,1 @@
+$setblock ~$(dx) -60 ~$(dz) chest{LootTable:"server_pack:command_minigame_sans/hotfix_v1_1"}

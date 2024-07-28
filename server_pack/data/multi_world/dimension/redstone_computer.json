@@ -11,8 +11,8 @@
 					"block": "minecraft:stone",
 					"height": 1
 				}
-			]
-		},
-		"structure_overrides": []
+			],
+			"structure_overrides": []
+		}
 	}
 }

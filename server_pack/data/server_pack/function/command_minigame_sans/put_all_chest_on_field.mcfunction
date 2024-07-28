@@ -1,0 +1,16 @@
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned -5 -60 -5 run function server_pack:command_minigame_sans/put_chest_one_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned -5 -60 -5 run function server_pack:command_minigame_sans/put_chest_two_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned -5 -60 9 run function server_pack:command_minigame_sans/put_chest_one_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned -5 -60 9 run function server_pack:command_minigame_sans/put_chest_two_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned 9 -60 -5 run function server_pack:command_minigame_sans/put_chest_one_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned 9 -60 -5 run function server_pack:command_minigame_sans/put_chest_two_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned 9 -60 9 run function server_pack:command_minigame_sans/put_chest_one_on_field_macro with storage command_minigame_sans:random_one
+function server_pack:command_minigame_sans/roll_the_pos
+execute positioned 9 -60 9 run function server_pack:command_minigame_sans/put_chest_two_on_field_macro with storage command_minigame_sans:random_one

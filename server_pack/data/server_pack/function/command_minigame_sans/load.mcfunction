@@ -1,0 +1,2 @@
+scoreboard objectives add minigame_1_start dummy
+scoreboard players set minigame_1_world minigame_1_start 0

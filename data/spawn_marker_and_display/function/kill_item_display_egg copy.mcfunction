@@ -1,0 +1,1 @@
+give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["kill_item_display"]},item_name='{"text":"刪除Item display"}',lore=['"使用生怪蛋後"','"刪除三格內最近的item display"']] 1
