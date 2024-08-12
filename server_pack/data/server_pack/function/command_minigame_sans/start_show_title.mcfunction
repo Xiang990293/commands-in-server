@@ -1,0 +1,1 @@
+execute store result score minigame_1_world minigame_1_show_start_title run function server_pack:command_minigame_sans/show_title

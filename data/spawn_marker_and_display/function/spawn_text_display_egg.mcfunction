@@ -1,1 +1,0 @@
-give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["spawn_text_display"]},item_name='{"text":"新增Text display[rename this item to set the text]"}',lore=['"請重新命名此生怪蛋"','"讓召喚出來的text display顯示文字"']] 1

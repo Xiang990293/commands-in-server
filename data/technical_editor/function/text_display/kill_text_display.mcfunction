@@ -1,0 +1,1 @@
+give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["kill_text_display"]},item_name='{"text":"刪除文字展示實體"}',lore=['"使用後"','"刪除三格內最近的文字展示實體"']] 1

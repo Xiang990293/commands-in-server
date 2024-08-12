@@ -52,14 +52,14 @@ execute if score world so_xn matches 1 if score Xiang990293 Xnc matches 1.. run 
 execute if score world so_fn matches 1 if score FzMY Fnc matches 1.. run scoreboard players remove FzMY Fnc 1
 
 #偵測執行-觸發條件trigger
-##天痕技能一
-execute if entity sky_scar if score sky_scar sss1c matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_nirvana_trigger_item_check run function skill:sky_scar_skill_1/sky_scar_skill_1_trigger
-##天痕必殺技
-execute if entity sky_scar if score sky_scar ssnc matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_skill_1_trigger_item_check run function skill:sky_scar_nirvana/sky_scar_nirvana_trigger
-##張博必殺技
-execute if entity FzMY if score FzMY Fnc matches ..0 at FzMY as @e[type=item,distance=..2] if predicate skill:fzmy_nirvana_trigger_item_check run function skill:fzmy_nirvana/fzmy_nirvana_trigger
-##翔越風必殺技
-execute if entity Xiang990293 if score Xiang990293 Xnc matches ..0 at Xiang990293 as @e[type=item,distance=..2] if predicate skill:xiang990293_nirvana_trigger_item_check run function skill:xiang990293_nirvana/xiang990293_nirvana_trigger
+# ##天痕技能一
+# execute if entity sky_scar if score sky_scar sss1c matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_nirvana_trigger_item_check run function skill:sky_scar_skill_1/sky_scar_skill_1_trigger
+# ##天痕必殺技
+# execute if entity sky_scar if score sky_scar ssnc matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_skill_1_trigger_item_check run function skill:sky_scar_nirvana/sky_scar_nirvana_trigger
+# ##張博必殺技
+# execute if entity FzMY if score FzMY Fnc matches ..0 at FzMY as @e[type=item,distance=..2] if predicate skill:fzmy_nirvana_trigger_item_check run function skill:fzmy_nirvana/fzmy_nirvana_trigger
+# ##翔越風必殺技
+# execute if entity Xiang990293 if score Xiang990293 Xnc matches ..0 at Xiang990293 as @e[type=item,distance=..2] if predicate skill:xiang990293_nirvana_trigger_item_check run function skill:xiang990293_nirvana/xiang990293_nirvana_trigger
 
 #觸發條件恢復
 ##天痕技能一--岩漿球

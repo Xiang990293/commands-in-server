@@ -1,0 +1,5 @@
+scoreboard players set minigame_1_world minigame_1_show_start_title 0
+schedule function server_pack:command_minigame_sans/start_show_title 1.5s append
+schedule function server_pack:command_minigame_sans/start_show_title 3s append
+schedule function server_pack:command_minigame_sans/start_show_title 4.5s append
+schedule function server_pack:command_minigame_sans/start_show_title 6s append

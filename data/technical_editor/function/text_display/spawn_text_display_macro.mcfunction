@@ -1,0 +1,1 @@
+$give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["spawn_text_display"]},item_name='$(name)',lore=['"請重新命名此生怪蛋"','"讓召喚出來的文字展示實體顯示文字"']] 1

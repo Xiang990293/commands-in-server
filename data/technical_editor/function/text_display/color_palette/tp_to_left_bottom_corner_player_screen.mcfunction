@@ -1,0 +1,1 @@
+execute as @n[tag=color_palette] at @p anchored eyes facing ^ ^ ^1 positioned ~ ~1.6 ~ run tp @s ^1 ^-.5 ^1 facing ^ ^ ^-1

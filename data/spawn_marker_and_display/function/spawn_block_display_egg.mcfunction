@@ -1,1 +1,0 @@
-give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["spawn_block_display"]},item_name='{"text":"新增Block display"}',lore=['"請在副手裝備方塊後使用生怪蛋"','"讓召喚出來的block display顯示方塊"']] 1

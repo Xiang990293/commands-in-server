@@ -1,22 +1,36 @@
 {
-	"type": "minecraft:crafting_shaped",
+	"type": "crafting_shaped",
 	"pattern": [
-	  "bab",
-	  "c  "
+		"bab",
+		"c  ",
+		"   "
 	],
 	"key": {
-	  "a": {
-		"item": "minecraft:phantom_membrane"
-	  },
-	  "b": {
-		"item": "minecraft:amethyst_shard"
-	  },
-	  "c": {
-		"item": "minecraft:end_rod"
-	  }
+		"a": {
+			"item": "phantom_membrane"
+		},
+		"b": {
+			"item": "amethyst_shard"
+		},
+		"c": {
+			"item": "end_rod"
+		}
 	},
 	"result": {
-	  "id": "minecraft:knowledge_book"
+		"id": "minecraft:carrot_on_a_stick",
+		"count": 1,
+		"components": {
+			"minecraft:custom_model_data": 1,
+			"minecraft:item_name": "{\"text\":\"隱形轉換器\",\"color\":\"dark_gray\"}",
+			"minecraft:lore": [
+				"{\"text\":\"這是來自遙遠星球的新科技\",\"color\":\"aqua\",\"italic\":false}",
+				"{\"text\":\"利用量子隱形科技將特定物品隱形\",\"color\":\"aqua\",\"italic\":false}",
+				"{\"text\":\"右鍵尋找對象\",\"color\":\"gray\",\"italic\":false}",
+				"{\"text\":\"蹲下瞄準使用\",\"color\":\"gray\",\"italic\":false}"
+			],
+			"minecraft:damage": 0,
+			"minecraft:max_damage": 100
+		}
 	}
-  }
+}
   

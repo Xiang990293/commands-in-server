@@ -19,6 +19,6 @@ scoreboard objectives remove m1
 scoreboard objectives remove m2
 scoreboard objectives remove m3
 ##========== 時間計算 ==========
-scoreboard objectives remove timer
+# scoreboard objectives remove timer
 # ---------- 完結通知 ----------
 tellraw @a [{"text":"您已將資料包 "},{"text":"掛網偵測器 ","color":"yellow"},{"text":"關閉","color":"red"},{"text":",感謝您的使用","color":"white"}]

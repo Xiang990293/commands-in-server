@@ -13,7 +13,7 @@ tellraw @a [{"text":"||","color":"gray"},{"text":"                   版本2.0.0
 ##掛網偵測器
 function afk:start
 ##物品消除系統
-function items_manager:initialize
+function items_manager:load
 ##技能、大招與必殺技
 function skill:load
 
@@ -22,9 +22,6 @@ scoreboard objectives add daytime dummy
 
 #遊戲規則設定(創建新世界時適用)
 gamerule commandBlockOutput false
-
-#新配方進度載入
-function new_recipe:load
 
 #設定載入
 

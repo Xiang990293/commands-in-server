@@ -1,3 +1,4 @@
+data modify storage skill:option generic set value {}
 scoreboard objectives add sss1c dummy
 # execute if score world execute_count matches 1 run scoreboard players set sky_scar sss1c 0
 bossbar add sky_scar_skill_1_cooldown {"text":"deja vu加速爆擊 冷卻","color":"blue"}

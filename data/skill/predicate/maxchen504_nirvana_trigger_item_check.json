@@ -3,6 +3,12 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:redstone_block\",tag:{ItemOwner:\"max_chen504\",SkillType:\"nirvana\"}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"max_chen504\",SkillType:\"nirvana\",cool_down:600}}}}",
+		"distance":	{
+			"absolute": {
+				"min": 0,
+				"max": 2
+			}
+		}
 	}
 }

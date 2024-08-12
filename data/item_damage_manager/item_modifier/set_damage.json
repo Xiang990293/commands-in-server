@@ -1,0 +1,9 @@
+{
+	"function": "minecraft:set_damage",
+	"damage": {
+		"type": "minecraft:storage",
+		"storage": "item_damage_manager:damage_store",
+		"path": "damage_value"
+	}
+}
+  

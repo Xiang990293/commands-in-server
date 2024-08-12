@@ -6,11 +6,7 @@ execute if score world option_afk matches 1 run function afk:loop
 ##掛機系統(自製)(目前無法使用)
 #execute if score world option_afkx matches 1 run function
 ##Dinnerbone jukebox
-execute if score world option_dinner matches 1 run function dinnerbone_jukebox:main
-##掉落物品管理員
-execute if score world option_item_mana matches 1 run function items_manager:loop
-##進度系統
-function new_recipe:tick
+# execute if score world option_dinner matches 1 run function dinnerbone_jukebox:main
 
 
 #筆記

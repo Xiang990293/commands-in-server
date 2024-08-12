@@ -1,0 +1,36 @@
+{
+    "display": {
+        "title": {
+            "text": "哼哼啊啊啊啊~",
+            "color": "#114514"
+        },
+        "description": {
+            "text": "你點了顏色代碼為#114514的文字",
+            "color": "#114514"
+        },
+        "icon": {
+            "id": "minecraft:rotten_flesh"
+        },
+        "frame": "challenge",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "hidden": true
+    },
+    "parent": "technical_editor:root",
+    "criteria": {
+        "getcobblestone": {
+            "trigger": "minecraft:recipe_unlocked",
+			"conditions": {
+				"recipe": "new_recipe:cobblestone"
+			}
+        }
+    },
+    "requirements": [
+        [
+            "getcobblestone"
+        ]
+    ],
+    "rewards": {
+        "experience": 10
+    }
+}

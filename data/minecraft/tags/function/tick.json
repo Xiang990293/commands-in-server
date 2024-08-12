@@ -3,8 +3,11 @@
         "teleport_hall:tick",
 		"skill:tick",
 		"invisi_assistant:tick",
+		"items_manager:tick",
+		"item_damage_manager:tick",
 		"new_recipe:tick",
 		"teletranser:tick",
-		"spawn_marker_and_display:tick"
+		"technical_editor:tick",
+		"technical_editor:text_display/color_palette/tick"
     ]
 }

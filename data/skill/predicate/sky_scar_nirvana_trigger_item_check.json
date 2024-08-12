@@ -3,7 +3,7 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:magma_cream\",Count:1b,tag:{display:{Name:'{\"italic\":false,\"color\":\"red\",\"text\":\"加速\"}'}}},OnGround:0b}",
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"sky_scar\",SkillType:\"nirvana\",cool_down:600}}}}",
 		"distance":	{
 			"absolute": {
 				"min": 0,

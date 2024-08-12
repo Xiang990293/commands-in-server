@@ -3,6 +3,12 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{id:\"minecraft:gray_glazed_terracotta\",tag:{ItemOwner:\"Xiang990293\",SkillType:\"nirvana\"}}}"
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"Xiang990293\",SkillType:\"nirvana\",cool_down:200}}}}",
+		"distance":	{
+			"absolute": {
+				"min": 0,
+				"max": 2
+			}
+		}
 	}
 }

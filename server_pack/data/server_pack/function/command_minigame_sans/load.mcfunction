@@ -1,2 +1,4 @@
 scoreboard objectives add minigame_1_start dummy
+scoreboard objectives add minigame_1_show_start_title dummy
 scoreboard players set minigame_1_world minigame_1_start 0
+scoreboard players set minigame_1_world minigame_1_show_start_title 0

@@ -1,0 +1,1 @@
+give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["modify_item_display"]},item_name='{"text":"修改物品展示實體"}',lore=['"請在副手裝備物品後使用生怪蛋"','"修改三格內最近的物品展示實體的顯示物品為副手物品"']] 1
