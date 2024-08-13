@@ -1,5 +1,6 @@
 {
 	"values": [
-		"server_pack:command_minigame_sans/tick"
+		"server_pack:command_minigame_sans/tick",
+		"server_pack:tick"
 	]
 }

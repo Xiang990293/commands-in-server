@@ -3,4 +3,4 @@ execute in multi_world:command_minigame_sans run kill @e[type=item,x=-7,y=-60,z=
 execute in multi_world:command_minigame_sans run function server_pack:command_minigame_sans/put_all_chest_on_field
 
 # 執行結束後排定30秒後自動再次執行 (當遊戲仍在進行 - minigame_1_world 的 minigame_1_start == 1)
-execute if score minigame_1_world minigame_1_start matches 1 run schedule function server_pack:command_minigame_sans/minigame_1_chest 30s
+execute if score minigame_1_world minigame_1_start matches 1 run schedule function server_pack:command_minigame_sans/spawn_chest 30s
