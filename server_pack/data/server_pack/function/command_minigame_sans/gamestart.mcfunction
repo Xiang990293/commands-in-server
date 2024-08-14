@@ -7,6 +7,5 @@ execute in multi_world:command_minigame_sans run team join start @a[tag=ready_to
 execute in multi_world:command_minigame_sans run tag @a[tag=ready_to_play] remove ready_to_play
 # game start state change (let state [game_start] to true)
 scoreboard players set minigame_1_world minigame_1_start 1
-
 # game start loop (let minigame_1_chest.mcf start tick while [game_start] is true)
 function server_pack:command_minigame_sans/spawn_chest
