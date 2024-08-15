@@ -1,3 +1,5 @@
+$data modify block $(Pos1) Items set value []
+$data modify block $(Pos2) Items set value []
 $data modify block $(Pos1) Items append from entity @n Inventory[{Slot:0b}]
 $data modify block $(Pos1) Items append from entity @n Inventory[{Slot:1b}]
 $data modify block $(Pos1) Items append from entity @n Inventory[{Slot:2b}]
