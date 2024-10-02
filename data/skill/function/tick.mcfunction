@@ -9,10 +9,10 @@ execute if score world so_sss1 matches 0 run bossbar set minecraft:sky_scar_skil
 execute if score world so_sss1 matches 1 if score sky_scar sky_scar_skill_1_cooldown matches 1.. run bossbar set minecraft:sky_scar_skill_1_cooldown visible true
 execute store result bossbar minecraft:sky_scar_skill_1_cooldown value run scoreboard players get sky_scar sky_scar_skill_1_cooldown
 ###必殺技的冷卻條狀態
-execute if score sky_scar ssky_skar_nirvana_cooldown matches 0 run bossbar set minecraft:sky_scar_nirvana_cooldown visible false
+execute if score sky_scar sky_scar_nirvana_cooldown matches 0 run bossbar set minecraft:sky_scar_nirvana_cooldown visible false
 execute if score world so_ssn matches 0 run bossbar set minecraft:sky_scar_nirvana_cooldown visible false
-execute if score world so_ssn matches 1 if score sky_scar ssky_skar_nirvana_cooldown matches 1.. run bossbar set minecraft:sky_scar_nirvana_cooldown visible true
-execute store result bossbar minecraft:sky_scar_nirvana_cooldown value run scoreboard players get sky_scar ssky_skar_nirvana_cooldown
+execute if score world so_ssn matches 1 if score sky_scar sky_scar_nirvana_cooldown matches 1.. run bossbar set minecraft:sky_scar_nirvana_cooldown visible true
+execute store result bossbar minecraft:sky_scar_nirvana_cooldown value run scoreboard players get sky_scar sky_scar_nirvana_cooldown
 ##張博
 ###必殺技的冷卻條狀態
 execute if score FzMY fzmy_nirvana_cooldown matches 0 run bossbar set minecraft:fzmy_nirvana_cooldown visible false
@@ -45,7 +45,7 @@ execute if score sky_scar sky_scar_skill_1_cooldown matches 1..40 run attribute 
 ##天痕技能一
 execute if score world so_sss1 matches 1 if score sky_scar sky_scar_skill_1_cooldown matches 1.. run scoreboard players remove sky_scar sky_scar_skill_1_cooldown 1
 ##天痕必殺技
-execute if score world so_ssn matches 1 if score sky_scar ssky_skar_nirvana_cooldown matches 1.. run scoreboard players remove sky_scar ssky_skar_nirvana_cooldown 1
+execute if score world so_ssn matches 1 if score sky_scar sky_scar_nirvana_cooldown matches 1.. run scoreboard players remove sky_scar sky_scar_nirvana_cooldown 1
 ##越風必殺技
 execute if score world so_xn matches 1 if score Xiang990293 xiang990293_nirvana_cooldown matches 1.. run scoreboard players remove Xiang990293 xiang990293_nirvana_cooldown 1
 ##張博必殺技
@@ -55,7 +55,7 @@ execute if score world so_fn matches 1 if score FzMY fzmy_nirvana_cooldown match
 # ##天痕技能一
 # execute if entity sky_scar if score sky_scar sky_scar_skill_1_cooldown matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_nirvana_trigger_item_check run function skill:sky_scar_skill_1/trigger
 # ##天痕必殺技
-# execute if entity sky_scar if score sky_scar ssky_skar_nirvana_cooldown matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_skill_1_trigger_item_check run function skill:sky_scar_nirvana/trigger
+# execute if entity sky_scar if score sky_scar sky_scar_nirvana_cooldown matches ..0 at sky_scar as @e[type=item,distance=..2] if predicate skill:sky_scar_skill_1_trigger_item_check run function skill:sky_scar_nirvana/trigger
 # ##張博必殺技
 # execute if entity FzMY if score FzMY fzmy_nirvana_cooldown matches ..0 at FzMY as @e[type=item,distance=..2] if predicate skill:fzmy_nirvana_trigger_item_check run function skill:fzmy_nirvana/fzmy_nirvana_trigger
 # ##翔越風必殺技
@@ -65,7 +65,7 @@ execute if score world so_fn matches 1 if score FzMY fzmy_nirvana_cooldown match
 ##天痕技能一--岩漿球
 execute as sky_scar if score @s sky_scar_skill_1_cooldown matches 20 run function skill:give_item/sky_scar_skill_1_trigger_item
 ##天痕必殺技--史萊姆球
-execute as sky_scar if score @s ssky_skar_nirvana_cooldown matches 20 run function skill:give_item/sky_scar_nirvana_trigger_item
+execute as sky_scar if score @s sky_scar_nirvana_cooldown matches 20 run function skill:give_item/sky_scar_nirvana_trigger_item
 ##張博必殺技--鐵錠
 execute as FzMY if score @s fzmy_nirvana_cooldown matches 20 run function skill:give_item/fzmy_nirvana_trigger_item
 ##翔越風必殺技--
