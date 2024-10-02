@@ -1,0 +1,1 @@
+$data modify entity @e[limit=1,type=minecraft:text_display,tag=question] text set value '{"translate":"question.$(level)","font":"$(font)"}'

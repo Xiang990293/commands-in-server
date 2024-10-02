@@ -3,7 +3,7 @@
 	"entity": "this",
 	"predicate": {
 		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"FzMY\",SkillType:\"nirvana\",cool_down:1600}}}}",
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"fzmy\",SkillType:\"nirvana\",cool_down:1600}}}}",
 		"distance":	{
 			"absolute": {
 				"min": 0,

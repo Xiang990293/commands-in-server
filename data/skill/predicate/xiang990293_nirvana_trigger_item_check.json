@@ -1,9 +1,9 @@
 {
 	"condition": "minecraft:entity_properties",
 	"entity": "this",
-	"predicate": {
+	"predicate": {	
 		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"Xiang990293\",SkillType:\"nirvana\",cool_down:200}}}}",
+		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"xiang990293\",SkillType:\"nirvana\",cool_down:200}}}}",
 		"distance":	{
 			"absolute": {
 				"min": 0,

@@ -1,7 +1,7 @@
 #10秒給抗性5、開技時消除所有效果、冷卻80秒
 effect clear
 effect give FzMY resistance 10 4
-scoreboard players set FzMY Fnc 1600
+scoreboard players set FzMY fzmy_nirvana_cooldown 1600
 
 #原本惡食技能：
 #大招：惡食

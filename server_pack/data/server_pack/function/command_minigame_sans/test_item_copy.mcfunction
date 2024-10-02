@@ -29,17 +29,4 @@ data modify storage store_inventory:command_minigame_sans Items[{Slot:103b}].Slo
 data modify storage store_inventory:command_minigame_sans Items[{Slot:102b}].Slot set value 11b
 data modify storage store_inventory:command_minigame_sans Items[{Slot:101b}].Slot set value 12b
 data modify storage store_inventory:command_minigame_sans Items[{Slot:100b}].Slot set value 13b
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:0b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:1b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:2b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:3b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:4b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:5b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:6b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:7b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:8b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:9b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:10b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:11b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:12b}]
-$data modify block $(Pos2) Items append from storage store_inventory:command_minigame_sans Items[{Slot:13b}]
+$data modify block $(Pos2) Items set from storage store_inventory:command_minigame_sans Items

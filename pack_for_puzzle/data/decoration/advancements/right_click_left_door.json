@@ -1,0 +1,19 @@
+{
+	"criteria": {
+	  "requirement": {
+		"trigger": "minecraft:player_interacted_with_entity",
+		"conditions": {
+		  "player": {
+			"type": "minecraft:player"
+		  },
+		  "entity": {
+			"type": "minecraft:interaction",
+			"nbt": "{Tags:[\"left_door\"]}"
+		  }
+		}
+	  }
+	},
+	"rewards": {
+	  "function": "decoration:left_door/toggle_left_door"
+	}
+  }

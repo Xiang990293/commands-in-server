@@ -1,0 +1,1 @@
+data modify entity @e[limit=1,tag=result,tag=target_screen,sort=nearest] text set value '""'

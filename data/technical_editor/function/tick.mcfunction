@@ -32,7 +32,7 @@ execute as @e[type=villager,tag=add_tag_technical] at @s run data modify entity 
 kill @e[type=villager,tag=add_tag_technical]
 #移除標籤-展示實體與標籤
 execute as @e[type=villager,tag=remove_tag_technical] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName 1 -1
-execute as @e[type=villager,tag=remove_tag_technical] at @s as @n[type=#technical_editor:technical_entities,distance=..3] run function technical_editor:remove_tag_macro with storage technical_editor:remove_tag
+execute as @e[type=villager,tag=remove_tag_technical] at @s as @n[type=#technical_editor:technical_entities,distance=..3] run function technical_editor:tag_editor/remove_tag_macro with storage technical_editor:remove_tag
 kill @e[type=villager,tag=remove_tag_technical]
 
 #新增標籤-所有實體
@@ -40,8 +40,9 @@ execute as @e[type=villager,tag=add_tag_general] at @s run data modify entity @n
 kill @e[type=villager,tag=add_tag_general]
 #移除標籤-所有實體
 execute as @e[type=villager,tag=remove_tag_general] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName 1 -1
-execute as @e[type=villager,tag=remove_tag_general] at @s as @n[distance=..3] run function technical_editor:remove_tag_macro with storage technical_editor:remove_tag
+execute as @e[type=villager,tag=remove_tag_general] at @s as @n[distance=..3] run function technical_editor:tag_editor/remove_tag_macro with storage technical_editor:remove_tag
 kill @e[type=villager,tag=remove_tag_general]
 
 # remove_tag_general
 # execute as @e[type=villager,tag=spawn_item_display] at @s summon item_display run data modify entity @s block_state.Name set from entity @p Inventory[{Slot:-106b}].id
+

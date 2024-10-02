@@ -1,0 +1,1 @@
+$execute if score @p $(ItemOwner)_$(SkillType)_cooldown matches 0 as @p run function skill:$(ItemOwner)_$(SkillType)/trigger
