@@ -39,7 +39,7 @@ execute store result bossbar minecraft:xiang990293_nirvana_cooldown value run sc
 #現在幾點
 #execute store result score daytimeFzMY daytime run time query daytime
 ##天痕力量增強標籤撤銷
-execute if score sky_scar sky_scar_skill_1_cooldown matches 1..40 run attribute sky_scar minecraft:generic.attack_damage modifier remove 1-1-1-1-2
+execute if score sky_scar sky_scar_skill_1_cooldown matches 1..40 run attribute sky_scar minecraft:attack_damage modifier remove 1-1-1-1-2
 
 #冷卻時間
 ##天痕技能一

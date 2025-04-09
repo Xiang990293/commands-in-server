@@ -7,7 +7,6 @@
 			"weapon.mainhand": {
 			"items": "minecraft:carrot_on_a_stick",
 			"components": {
-					"minecraft:custom_model_data": 1,
 					"minecraft:item_name": "{\"text\":\"隱形轉換器\",\"color\":\"dark_gray\"}",
 					"minecraft:lore": [
 						"{\"text\":\"這是來自遙遠星球的新科技\",\"color\":\"aqua\",\"italic\":false}",

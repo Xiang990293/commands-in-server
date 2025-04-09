@@ -6,21 +6,15 @@
 		"   "
 	],
 	"key": {
-		"a": {
-			"item": "phantom_membrane"
-		},
-		"b": {
-			"item": "amethyst_shard"
-		},
-		"c": {
-			"item": "end_rod"
-		}
+		"a": "phantom_membrane",
+		"b": "amethyst_shard",
+		"c": "end_rod"
 	},
 	"result": {
 		"id": "minecraft:carrot_on_a_stick",
 		"count": 1,
 		"components": {
-			"minecraft:custom_model_data": 1,
+			"minecraft:item_model": "minecraft:carrot_on_a_stick",
 			"minecraft:item_name": "{\"text\":\"隱形轉換器\",\"color\":\"dark_gray\"}",
 			"minecraft:lore": [
 				"{\"text\":\"這是來自遙遠星球的新科技\",\"color\":\"aqua\",\"italic\":false}",
