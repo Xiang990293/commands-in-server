@@ -1,1 +1,1 @@
-execute as sky_scar at @s run give @s magma_cream[lore=['{"italic":false,"text":"使用後會獲得 加速II 2秒並在五秒內攻擊時增加至175%攻擊力"}'],item_name='{"italic":false,"color":"red","text":"加速"}',enchantments={levels:{"infinity":1,"mending":1}},custom_data={ItemOwner:"sky_scar",SkillType:"skill_1",cool_down:160}] 1
+execute at sky_scar run give @p magma_cream[lore=['{"italic":false,"text":"使用後會獲得 加速II 2秒並在五秒內攻擊時增加至175%攻擊力"}'],item_name='{"italic":false,"color":"red","text":"加速"}',enchantments={levels:{"infinity":1,"mending":1}},custom_data={ItemOwner:"sky_scar",SkillType:"skill_1",cool_down:160}] 1

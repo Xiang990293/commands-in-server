@@ -1,0 +1,28 @@
+{
+    "type": "crafting_shaped",
+    "pattern": [
+        "AAA",
+        "BCB",
+        "AAA"
+    ],
+    "key": {
+        "A": "minecraft:ender_pearl",
+        "B": "minecraft:amethyst_shard",
+        "C": "minecraft:globe_banner_pattern"
+    },
+	"result": {
+		"id": "minecraft:paper",
+		"count": 1,
+		"components": {
+			"minecraft:item_model": "minecraft:globe_banner_pattern",
+			"minecraft:item_name": "{\"text\":\"臨時傳送卷軸\",\"color\":\"#FF33FF\"}",
+			"minecraft:lore": [
+				"{\"text\":\"這是前期的傳送替代方案\",\"color\":\"aqua\",\"italic\":false}",
+				"{\"text\":\"既能夠保證前期生存的合理性與獨立性\",\"color\":\"aqua\",\"italic\":false}",
+				"{\"text\":\"又能夠提供沒有殿堂的玩家傳送的方法\",\"color\":\"aqua\",\"italic\":false}",
+				"{\"text\":\"扔出去即可使用\",\"color\":\"gray\",\"italic\":false}"
+			],
+            "minecraft:custom_data":"{ItemOwner:\"ALL\",SkillType:\"WORLD\",cool_down:1000}"
+		}
+	}
+}
