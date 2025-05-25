@@ -22,7 +22,7 @@
 				"{\"text\":\"又能夠提供沒有殿堂的玩家傳送的方法\",\"color\":\"aqua\",\"italic\":false}",
 				"{\"text\":\"扔出去即可使用\",\"color\":\"gray\",\"italic\":false}"
 			],
-            "minecraft:custom_data":"{ItemOwner:\"ALL\",SkillType:\"WORLD\",cool_down:1000}"
+            "minecraft:custom_data":"{ItemOwner:\"this\",SkillType:\"WORLD\",cool_down:1000}"
 		}
 	}
 }

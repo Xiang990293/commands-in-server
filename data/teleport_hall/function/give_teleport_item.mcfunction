@@ -1,4 +1,3 @@
-advancement revoke @s only teleport_hall:player_enter_hall_check
 execute at @s store result score @s tppaper run clear @p paper[minecraft:lore=['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],minecraft:item_name='{"italic":false,"color":"aqua","text":"傳送卷軸"}',item_model="minecraft:globe_banner_pattern",minecraft:enchantments={levels:{"minecraft:infinity":1,"minecraft:mending":1}}] 0
 execute at @e[type=minecraft:armor_stand,tag=tphall] as @a[distance=..13,scores={tppaper=0},sort=nearest] run give @s paper[lore=['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],item_name='{"italic":false,"color":"aqua","text":"傳送卷軸"}',enchantments={levels:{"minecraft:infinity":1,"minecraft:mending":1}},custom_data={ItemOwner:"ALL",SkillType:"WORLD",cool_down:1000}]
 
