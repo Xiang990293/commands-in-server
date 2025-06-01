@@ -1,0 +1,1 @@
+$title @s title {"text":"$(dimension)","color":"$(color)"}
