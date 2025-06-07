@@ -1,14 +1,14 @@
 {
 	"function": "minecraft:copy_custom_data",
 	"source": {
-	  "type": "minecraft:storage",
-	  "source": "technical_editor:custom_data"
+		"type": "minecraft:storage",
+		"source": "technical_editor:custom_data"
 	},
 	"ops": [
-	  {
-		"source": "text_setting.\"text\"",
-		"target": "text_setting",
-		"op": "replace"
-	  }
+		{
+			"source": "text_setting.\"text\"",
+			"target": "text_setting",
+			"op": "replace"
+		}
 	]
-  }
+}

@@ -1,0 +1,1 @@
+data get storage storage:inventory_data

@@ -1,1 +1,1 @@
-give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["kill_marker"]},item_name='{"text":"刪除標記"}',lore=['"刪除三格以內最近的標記"']] 1
+give @p minecraft:bat_spawn_egg[minecraft:entity_data={id:"bat",Tags:["kill_marker"]},item_name={"text":"刪除標記"},lore=["刪除三格以內最近的標記"]] 1

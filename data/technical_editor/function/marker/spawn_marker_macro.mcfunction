@@ -1,1 +1,1 @@
-$give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["spawn_marker"]},item_name='$(name)',lore=['"請重新命名此生怪蛋"','"讓召喚出來的標記有標籤"']] 1
+$give @p minecraft:bat_spawn_egg[minecraft:entity_data={id:"bat",Tags:["spawn_marker"]},item_name=$(name),lore=["請重新命名此生怪蛋","讓召喚出來的標記有標籤"]] 1

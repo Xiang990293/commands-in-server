@@ -1,9 +1,9 @@
 ##### MAIN #####
 ## Name Jukebox
-execute as @e[type=item,nbt={Item:{tag:{display:{Name:'{"text":"Dinnerbone"}'}}}}] at @s align x align y align z unless entity @e[tag=dinnerbone,distance=..0.5] positioned ~0.5 ~-1 ~0.5 if block ~ ~ ~ jukebox run function dinnerbone_jukebox:scripts_name_jukebox
+execute as @e[type=item,nbt={Item:{tag:{display:{Name:{"text":"Dinnerbone"}}}}}] at @s align x align y align z unless entity @e[tag=dinnerbone,distance=..0.5] positioned ~0.5 ~-1 ~0.5 if block ~ ~ ~ jukebox run function dinnerbone_jukebox:scripts_name_jukebox
 
 ##### /function dinnerbone_jukebox:scripts_name_jukebox #####
-#summon minecraft:armor_stand ~ ~1 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1,Tags:["dinnerbone"],DisabledSlots:4144959,CustomNameVisible:1,CustomName:'{"text":"Dinnerbone"}'}
+#summon minecraft:armor_stand ~ ~1 ~ {NoGravity:1b,Invulnerable:1b,Marker:1b,Invisible:1,Tags:["dinnerbone"],DisabledSlots:4144959,CustomNameVisible:1,CustomName:{"text":"Dinnerbone"}}
 #kill @s
 ##### END /function dinnerbone_jukebox:scripts_name_jukebox #####
 

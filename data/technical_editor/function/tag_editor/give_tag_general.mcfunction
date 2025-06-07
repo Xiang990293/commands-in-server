@@ -1,1 +1,1 @@
-give @p minecraft:villager_spawn_egg[minecraft:entity_data={id:"villager",Tags:["add_tag_general"]},item_name='{"text":"添加標籤-展示實體與標記"}',lore=['"請重新命名此生怪蛋"','"為三格內最近的展示實體或標記新增標籤"']] 1
+give @p minecraft:bat_spawn_egg[minecraft:entity_data={id:"bat",Tags:["add_tag_general"]},item_name={"text":"添加標籤-展示實體與標記"},lore=["請重新命名此生怪蛋","為三格內最近的展示實體或標記新增標籤"]] 1

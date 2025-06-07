@@ -8,6 +8,7 @@
 		"new_recipe:tick",
 		"teletranser:tick",
 		"technical_editor:tick",
-		"technical_editor:text_display/color_palette/tick"
+		"technical_editor:text_display/color_palette/tick",
+		"storage:tick"
     ]
 }

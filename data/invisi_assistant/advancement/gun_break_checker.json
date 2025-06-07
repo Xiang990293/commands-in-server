@@ -1,32 +1,31 @@
 {
 	"criteria": {
-	  "shoot_invisi_gun": {
-		"trigger": "minecraft:location",
-		"conditions": {
-		  "player": [
-			{
-			  "condition": "minecraft:entity_properties",
-			  "entity": "this",
-			  "predicate": {
-				"equipment": {
-				  "mainhand": {
-					"components": {
-					  "minecraft:damage": 100
+		"shoot_invisi_gun": {
+			"trigger": "minecraft:location",
+			"conditions": {
+				"player": [
+					{
+						"condition": "minecraft:entity_properties",
+						"entity": "this",
+						"predicate": {
+							"equipment": {
+								"mainhand": {
+									"components": {
+										"minecraft:damage": 100
+									}
+								}
+							}
+						}
+					},
+					{
+						"condition": "minecraft:reference",
+						"name": "invisi_assistant:gun_on_hand"
 					}
-				  }
-				}
-			  }
-			},
-			{
-			  "condition": "minecraft:reference",
-			  "name": "invisi_assistant:gun_on_hand"
+				]
 			}
-		  ]
 		}
-	  }
 	},
 	"rewards": {
-	  "function": "invisi_assistant:break_the_item"
+		"function": "invisi_assistant:break_the_item"
 	}
-  }
-  
+}

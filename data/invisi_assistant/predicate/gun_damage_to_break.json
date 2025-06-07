@@ -7,15 +7,15 @@
 			"weapon.mainhand": {
 			"items": "minecraft:carrot_on_a_stick",
 			"components": {
-					"minecraft:item_name": "{\"text\":\"隱形轉換器\",\"color\":\"dark_gray\"}",
+					"minecraft:item_name": {"text":"隱形轉換器","color":"dark_gray"},
 					"minecraft:lore": [
-						"{\"text\":\"這是來自遙遠星球的新科技\",\"color\":\"aqua\",\"italic\":false}",
-						"{\"text\":\"利用量子隱形科技將特定物品隱形\",\"color\":\"aqua\",\"italic\":false}",
-						"{\"text\":\"右鍵尋找對象\",\"color\":\"gray\",\"italic\":false}",
-						"{\"text\":\"蹲下瞄準使用\",\"color\":\"gray\",\"italic\":false}"
+						{"text":"這是來自遙遠星球的新科技","color":"aqua","italic":false},
+						{"text":"利用量子隱形科技將特定物品隱形","color":"aqua","italic":false},
+						{"text":"右鍵尋找對象","color":"gray","italic":false},
+						{"text":"蹲下瞄準使用","color":"gray","italic":false}
 					]
 				}
 			}
-		}
+	}
 	}
 }

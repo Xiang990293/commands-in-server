@@ -5,19 +5,19 @@
             "color": "#4b4b4b"
         },
         "description": [
-			{
-				"text": "成功安裝資料包\n",
-				"color": "blue"
-        	},
-			{
-				"text": "輸入/function technical_editor:editor_guidebook",
-				"color": "blue"
-        	},
-			{
-				"text": "取得技術性實體編輯手冊",
-				"color": "blue"
-        	}
-		],
+            {
+                "text": "成功安裝資料包\n",
+                "color": "blue"
+            },
+            {
+                "text": "輸入/function technical_editor:editor_guidebook",
+                "color": "blue"
+            },
+            {
+                "text": "取得技術性實體編輯手冊",
+                "color": "blue"
+            }
+        ],
         "icon": {
             "id": "minecraft:command_block"
         },

@@ -1,0 +1,35 @@
+{
+    "display": {
+        "title": {
+            "text": "倉庫管理員專用資源包！",
+            "color": "#bbbbbb"
+        },
+        "description": [
+            {
+                "text": "成功安裝資料包\n",
+                "color": "blue"
+            },
+            {
+                "text": "輸入/function storage:admin_guidebook",
+                "color": "blue"
+            },
+            {
+                "text": "取得技術性實體編輯手冊",
+                "color": "blue"
+            }
+        ],
+        "icon": {
+            "id": "minecraft:command_block"
+        },
+        "frame": "task",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/block/structure_block.png"
+    },
+    "criteria": {
+        "get first": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}
