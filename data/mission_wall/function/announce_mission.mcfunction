@@ -9,7 +9,7 @@ data modify entity @n[type=item_display,tag=rewards_slot] data.hasItem set value
 data remove entity @n[type=interaction,tag=rewards_slot] data
 data modify storage mission_wall:request xp set value ""
 data modify storage mission_wall:request xp_level set value ""
-data modify storage mission_wall:request item set value ""
+data modify storage mission_wall:request item set value {action:"show_item",id:"minecraft:glass",count:1b}
 data remove storage mission_wall:request no_reward
 data remove storage mission_wall:request announcer
 data remove storage mission_wall:request reward_type

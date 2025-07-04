@@ -8,6 +8,6 @@ execute unless data entity @n[type=item_display,tag=rewards_slot] item{count:1,i
 data modify entity @n[type=item_display,tag=rewards_slot] item set value {count:1,id:"minecraft:glass"}
 data modify storage mission_wall:request xp set value ""
 data modify storage mission_wall:request xp_level set value ""
-data modify storage mission_wall:request item set value ""
+data modify storage mission_wall:request item set value {action:"show_item",id:"minecraft:glass",count:1b}
 data modify storage mission_wall:request no_reward set value ""
 data remove storage mission_wall:request announcer

@@ -5,4 +5,4 @@ execute if predicate mission_wall:is_holding_announcer_certificate run return -1
 # interact to mission bare hand but sneaking
 execute if predicate mission_wall:is_sneaking run return -1
 # interact to mission bare hand
-return run function mission_wall:check_mission with block ~ ~ ~ components."minecraft:custom_data"
+function mission_wall:check_mission with block ~ ~ ~ components."minecraft:custom_data"
