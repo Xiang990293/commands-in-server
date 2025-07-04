@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "conditions": {
+            "trigger": "minecraft:player_interacted_with_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:interaction",
+                    "nbt": "{Tags:[\"mission_application_form\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "mission_wall:toggle_application_form_state"
+    }
+}

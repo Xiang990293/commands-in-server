@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "button_place": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{type:\"endpoint_button\"}}}}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "teleport_hall:button_place_check/button_check_start"
+    }
+}

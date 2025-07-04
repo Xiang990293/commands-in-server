@@ -39,7 +39,7 @@ kill @e[type=bat,tag=tools]
 
 
 # show the item player nearby
-execute at @a positioned ~ ~5 ~ run title @p actionbar {"entity":"@n[type=marker, distance=..3]","nbt":"data.item"}
+execute at @a[x=-71884,y=32,z=-72218,dx=135,dy=17,dz=135] positioned ~ ~5 ~ run title @p actionbar {"entity":"@n[type=marker, distance=..3]","nbt":"data.item"}
 
 # set the item manually with item in offhand
 # run when player click the text in book, avoid execute automatically

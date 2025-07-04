@@ -9,6 +9,8 @@
 		"teletranser:tick",
 		"technical_editor:tick",
 		"technical_editor:text_display/color_palette/tick",
-		"storage:tick"
+		"storage:tick",
+		"operater:tick",
+		"8192over1:tick"
     ]
 }

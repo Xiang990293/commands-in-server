@@ -4,6 +4,7 @@
 		"skill:load",
 		"invisi_assistant:load",
 		"item_damage_manager:load",
-		"new_recipe:load"
+		"new_recipe:load",
+		"math:load"
     ]
 }

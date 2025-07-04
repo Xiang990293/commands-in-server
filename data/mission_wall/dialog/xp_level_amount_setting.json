@@ -1,0 +1,36 @@
+{
+    "title": "指定獎勵經驗等級",
+    "external_title": {"text": "你只能指定一次", "color":"yellow"},
+    "after_action": "close",
+    "type": "multi_action",
+    "body": [
+        {
+            "type": "plain_message",
+            "contents": {"text": "輸入經驗等級作為獎勵"}
+        }
+    ],
+    "inputs": [
+        {
+            "key": "xp_amount",
+            "label": {"text": "獎勵經驗等級"},
+            "label_visible": true,
+            "type": "number_range",
+            "initial": 10,
+            "start": 0,
+            "end": 200,
+            "step": 1,
+            "width": 500
+        }
+    ],
+    "columns": 1,
+    "actions": [
+        {
+            "label": "確認提交",
+            "tooltip": {"text": "提交後若想更改，可以重新提交申請表"},
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "data modify storage mission_wall:xp_compare b set value $(xp_amount)"
+            }
+        }
+    ]
+}

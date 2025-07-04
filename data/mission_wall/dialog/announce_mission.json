@@ -1,0 +1,72 @@
+{
+    "title": "發佈任務",
+    "external_title": {"text": "你會獲得任務申請表", "color":"yellow"},
+    "after_action": "close",
+    "type": "multi_action",
+    "body": [
+        {
+            "type": "plain_message",
+            "contents": {"text": "輸入任務資訊"}
+        }
+    ],
+    "inputs": [
+        {
+            "key": "mission_title",
+            "label": {"text": "任務標題："},
+            "label_visible": true,
+            "type": "text",
+            "initial": "空白任務",
+            "max_length": 10
+        },
+        {
+            "key": "mission_description",
+            "label": {"text": "任務內容："},
+            "label_visible": true,
+            "type": "text",
+            "initial": "什麼事都不用做",
+            "max_length": 32,
+            "multiline": {
+                "max_lines": 3
+            }
+        },
+        {
+            "key": "mission_rewards",
+            "label": {"text": "任務獎勵"},
+            "label_visible": true,
+            "type": "single_option",
+            "options": [
+                {
+                    "display": {"text": "無獎勵"},
+                    "id": "no_reward",
+                    "initial": true
+                },
+                {
+                    "display": {"text": "經驗值"},
+                    "id": "xp",
+                    "initial": false
+                },
+                {
+                    "display": {"text": "經驗等級"},
+                    "id": "xp_level",
+                    "initial": false
+                },
+                {
+                    "display": {"text": "物品"},
+                    "id": "item",
+                    "initial": false
+                }
+            ]
+        }
+    ],
+    "columns": 1,
+    "actions": [
+        {
+            "label": "發佈任務",
+            "tooltip": {"text": "發佈任務至任務佈告欄"},
+            "action": {
+                "type": "dynamic/run_command",
+                "template": "give @p paper[item_name='任務發佈申請表',item_model=\"minecraft:dune_armor_trim_smithing_template\",custom_data={title: \"$(mission_title)\", description: \"$(mission_description)\", reward_type: \"$(mission_rewards)\"}, lore=[[{'text':'任務標題：','color':'white','italic':false},'$(mission_title)'],[{'text':'任務內容：','color':'white','italic':false},'$(mission_description)'],[{'text':'任務獎勵類型：','color':'white','italic':false},{'translate':'mission.reward_type.$(mission_rewards)'}]]]"
+            }
+        }
+    ]
+}

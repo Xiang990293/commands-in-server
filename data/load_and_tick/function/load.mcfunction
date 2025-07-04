@@ -9,13 +9,16 @@ tellraw @a [{"text":"||","color":"gray"},{"text":"                   版本2.0.0
 #||  版本2.0.0  作者:Xiang990293翔越風  ||
 #|| Dinnerbone 唱片機由 Phoenix sc 獨立製作 ||
 #||     由 u/TheManOutOfReddit 發想     ||
+
+tellraw @a {"translate":"reload.message.resource_pack"}
+
 #初始化
 ##掛網偵測器
-function afk:start
+# function afk:start
 ##物品消除系統
-function items_manager:load
+# function items_manager:load
 ##技能、大招與必殺技
-function skill:load
+# function skill:load
 
 #計算一天已過幾刻用，早上六點為零
 scoreboard objectives add daytime dummy
@@ -32,14 +35,14 @@ execute unless score 2-1 pack_version matches 1
 scoreboard players add world execute_count 1
 
 #貓咪數量檢測用記分板
-scoreboard objectives add cat_count dummy
-execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 0
-execute if score world execute_count matches 1 run bossbar add minecraft:cat_count {"text":" "}
-execute if score world execute_count matches 1 run bossbar set minecraft:cat_count color yellow
-execute if score world execute_count matches 1 run bossbar set minecraft:cat_count visible true
-execute if score world execute_count matches 1 run bossbar set minecraft:cat_count players Xiang990293
-scoreboard objectives add cat_count_max dummy
-execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 200
+# scoreboard objectives add cat_count dummy
+# execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 0
+# execute if score world execute_count matches 1 run bossbar add minecraft:cat_count {"text":" "}
+# execute if score world execute_count matches 1 run bossbar set minecraft:cat_count color yellow
+# execute if score world execute_count matches 1 run bossbar set minecraft:cat_count visible true
+# execute if score world execute_count matches 1 run bossbar set minecraft:cat_count players Xiang990293
+# scoreboard objectives add cat_count_max dummy
+# execute if score world execute_count matches 1 run scoreboard players set Xiang990293 cat_count 200
 
 #依照版本號載入
 

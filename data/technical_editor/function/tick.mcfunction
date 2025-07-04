@@ -1,5 +1,5 @@
 #新增標記
-execute as @e[type=bat,tag=spawn_marker] at @s summon marker run data modify entity @s Tags append string entity @n CustomName 1 -1
+execute as @e[type=bat,tag=spawn_marker] at @s summon marker run data modify entity @s Tags append string entity @n CustomName
 kill @e[type=bat,tag=spawn_marker]
 #刪除標記
 execute as @e[type=bat,tag=kill_marker] at @s run kill @n[type=marker,distance=..3]
@@ -28,18 +28,18 @@ kill @e[type=bat,tag=kill_text_display]
 # ...
 
 #新增標籤-展示實體與標籤
-execute as @e[type=bat,tag=add_tag_technical] at @s run data modify entity @n[type=#technical_editor:technical_entities,distance=..3] Tags append string entity @s CustomName 1 -1
+execute as @e[type=bat,tag=add_tag_technical] at @s run data modify entity @n[type=#technical_editor:technical_entities,distance=..3] Tags append string entity @s CustomName
 kill @e[type=bat,tag=add_tag_technical]
 #移除標籤-展示實體與標籤
-execute as @e[type=bat,tag=remove_tag_technical] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName 1 -1
+execute as @e[type=bat,tag=remove_tag_technical] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName
 execute as @e[type=bat,tag=remove_tag_technical] at @s as @n[type=#technical_editor:technical_entities,distance=..3] run function technical_editor:tag_editor/remove_tag_macro with storage technical_editor:remove_tag
 kill @e[type=bat,tag=remove_tag_technical]
 
 #新增標籤-所有實體
-execute as @e[type=bat,tag=add_tag_general] at @s run data modify entity @n[distance=..3] Tags append string entity @s CustomName 1 -1
+execute as @e[type=bat,tag=add_tag_general] at @s run data modify entity @n[distance=..3] Tags append string entity @s CustomName
 kill @e[type=bat,tag=add_tag_general]
 #移除標籤-所有實體
-execute as @e[type=bat,tag=remove_tag_general] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName 1 -1
+execute as @e[type=bat,tag=remove_tag_general] run data modify storage technical_editor:remove_tag removing_tag set string entity @s CustomName
 execute as @e[type=bat,tag=remove_tag_general] at @s as @n[distance=..3] run function technical_editor:tag_editor/remove_tag_macro with storage technical_editor:remove_tag
 kill @e[type=bat,tag=remove_tag_general]
 

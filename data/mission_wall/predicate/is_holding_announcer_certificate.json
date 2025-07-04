@@ -1,0 +1,15 @@
+{
+    "condition": "minecraft:entity_properties",
+    "entity": "this",
+    "predicate": {
+        "equipment": {
+            "mainhand": {
+                "items": "minecraft:paper",
+                "components": {
+                    "minecraft:item_model": "minecraft:creeper_banner_pattern",
+                    "minecraft:enchantment_glint_override": true
+                }
+            }
+        }
+    }
+}
