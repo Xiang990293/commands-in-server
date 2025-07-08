@@ -1,0 +1,58 @@
+{
+    "criteria": {
+        "no_reward": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"no_reward\"}}}}"
+                }
+            }
+        },
+        "xp": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp\"}}}}"
+                }
+            }
+        },
+        "xp_level": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp_level\"}}}}"
+                }
+            }
+        },
+        "item": {
+            "trigger": "minecraft:placed_block",
+            "conditions": {
+                "player": {
+                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"item\"}}}}"
+                }
+            }
+        },
+        "is_adventure": {
+            "trigger": "minecraft:tick",
+            "conditions": {
+                "player": {
+                    "nbt": "{playerGameType:2}"
+                }
+            }
+        }
+    },
+    "requirements": [
+        [
+            "no_reward",
+            "xp",
+            "xp_level",
+            "item"
+        ],
+        [
+            "is_adventure"
+        ]
+    ],
+    "rewards": {
+        "function": "mission_wall:mission_sign_place_check/mission_sign_check_start"
+    }
+}
