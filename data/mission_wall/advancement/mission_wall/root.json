@@ -1,0 +1,19 @@
+{
+    "display": {
+        "title": "任務牆資料包！",
+        "description": "使用前先\n/function mission_wall:get_get_sign\n/function mission_wall:summon_application_form_slot\n/function mission_wall:summon_rewards_slot\n取得任務產生道具",
+        "icon": {
+            "id": "minecraft:acacia_sign"
+        },
+        "announce_to_chat": false,
+        "background": "minecraft:block/test_block_log",
+        "frame": "task",
+        "hidden": false,
+        "show_toast": false
+    },
+    "criteria": {
+        "tick": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

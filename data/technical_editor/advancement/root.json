@@ -1,9 +1,6 @@
 {
     "display": {
-        "title": {
-            "text": "技術性實體編輯資源包！",
-            "color": "#4b4b4b"
-        },
+        "title": "技術性實體編輯資源包！",
         "description": [
             {
                 "text": "成功安裝資料包\n",
@@ -25,7 +22,7 @@
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/structure_block.png"
+        "background": "minecraft:block/structure_block"
     },
     "criteria": {
         "get first": {

@@ -1,9 +1,6 @@
 {
     "display": {
-        "title": {
-            "text": "倉庫管理員專用資源包！",
-            "color": "#bbbbbb"
-        },
+        "title": "倉庫管理員專用資源包！",
         "description": [
             {
                 "text": "成功安裝資料包\n",
@@ -25,7 +22,7 @@
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/structure_block.png"
+        "background": "minecraft:block/shulker_box"
     },
     "criteria": {
         "get first": {

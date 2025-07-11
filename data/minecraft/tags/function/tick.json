@@ -11,6 +11,8 @@
 		"technical_editor:text_display/color_palette/tick",
 		"storage:tick",
 		"operater:tick",
-		"8192over1:tick"
+		"8192over1:tick",
+		"multi_world:tick",
+		"evilonesw_extrainv:tick"
     ]
 }

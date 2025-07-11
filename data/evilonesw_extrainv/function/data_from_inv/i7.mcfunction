@@ -1,0 +1,1 @@
+$data modify storage evswextrainv:7 $(uid0)$(uid1)$(uid2)$(uid3) set from entity @s Items

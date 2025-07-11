@@ -5,6 +5,7 @@
 		"invisi_assistant:load",
 		"item_damage_manager:load",
 		"new_recipe:load",
-		"math:load"
+		"math:load",
+		"evilonesw_extrainv:load"
     ]
 }

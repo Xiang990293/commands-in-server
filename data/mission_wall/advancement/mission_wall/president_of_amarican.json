@@ -1,0 +1,22 @@
+{
+    "display": {
+        "description": "坐白宮",
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": true,
+        "icon": {
+            "id": "minecraft:enchanted_golden_apple"
+        },
+        "title": "美國總統",
+        "hidden": true
+    },
+    "parent": "mission_wall:mission_wall/root",
+    "criteria": {
+        "impossible": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "rewards": {
+        "function": "mission_wall:give_notch"
+    }
+}

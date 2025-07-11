@@ -31,14 +31,6 @@
                     "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"item\"}}}}"
                 }
             }
-        },
-        "is_adventure": {
-            "trigger": "minecraft:tick",
-            "conditions": {
-                "player": {
-                    "nbt": "{playerGameType:2}"
-                }
-            }
         }
     },
     "requirements": [
@@ -47,9 +39,6 @@
             "xp",
             "xp_level",
             "item"
-        ],
-        [
-            "is_adventure"
         ]
     ],
     "rewards": {

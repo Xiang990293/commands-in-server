@@ -1,9 +1,6 @@
 {
     "display": {
-        "title": {
-            "text": "Xiang990293 伺服器擴充資源包！",
-            "color": "#4b4b4b"
-        },
+        "title": "立方漣漪生存伺服器 - 配方擴充資源包！",
         "description": {
             "text": "成功安裝資料包",
             "color": "blue"
@@ -15,10 +12,10 @@
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/cobblestone.png"
+        "background": "minecraft:block/cobblestone"
     },
     "criteria": {
-        "get first": {
+        "get_first": {
             "trigger": "minecraft:tick"
         }
     }

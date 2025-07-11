@@ -1,0 +1,1 @@
+advancement grant @s only mission_wall:mission_wall/president_of_amarican

@@ -1,23 +1,20 @@
 {
     "display": {
-        "title": {
-            "text": "生存伺服器管理員資源包！",
-            "color": "#4b4b4b"
-        },
+        "title": "生存伺服器管理員資源包！",
         "description": [
-			{
-				"text": "成功安裝資料包\n",
-				"color": "blue"
-        	},
-			{
-				"text": "輸入/function operater:operator_manual",
-				"color": "blue"
-        	},
-			{
-				"text": "取得管理員手冊",
-				"color": "blue"
-        	}
-		],
+            {
+                "text": "成功安裝資料包\n",
+                "color": "blue"
+            },
+            {
+                "text": "輸入/function operater:operator_manual",
+                "color": "blue"
+            },
+            {
+                "text": "取得管理員手冊",
+                "color": "blue"
+            }
+        ],
         "icon": {
             "id": "minecraft:command_block"
         },
@@ -25,7 +22,7 @@
         "show_toast": false,
         "announce_to_chat": false,
         "hidden": false,
-        "background": "minecraft:textures/block/structure_block.png"
+        "background": "minecraft:block/jigsaw_top"
     },
     "criteria": {
         "get first": {

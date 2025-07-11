@@ -1,0 +1,1 @@
+execute as @s unless entity @s[scores={evswextinv_lag=..0,evswextinv_lag=0..}] run scoreboard players set @s evswextinv_lag 1

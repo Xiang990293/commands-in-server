@@ -1,0 +1,8 @@
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"completed"} run data modify block ~ ~ ~ front_text.messages[2] set value "已被接取"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"completed"} run data modify block ~ ~ ~ front_text.color set value "yellow"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"completed"} run title @s actionbar "任務狀態改為 已被接取"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"completed"} run return run data modify block ~ ~ ~ components."minecraft:custom_data".status set value "accepted"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"accepted"} run data modify block ~ ~ ~ front_text.messages[2] set value "已經完成"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"accepted"} run data modify block ~ ~ ~ front_text.color set value "green"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"accepted"} run title @s actionbar "任務狀態改為 已經完成"
+execute if data block ~ ~ ~ components."minecraft:custom_data"{status:"accepted"} run return run data modify block ~ ~ ~ components."minecraft:custom_data".status set value "completed"

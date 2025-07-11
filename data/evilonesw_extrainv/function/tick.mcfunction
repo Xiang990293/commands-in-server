@@ -1,0 +1,9 @@
+scoreboard players enable @a evswextinv_trig
+
+# if player press the number in menu, the inventory changes to the corresponding ones, default is the first. (force change in rrrss when change dim)
+execute as @a[scores={evswextinv_jump=1..,evswextinv_sneak=1..}] run tellraw @s [{"color":"dark_gray","text":"Choose inventory to swap to\n"},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 1"},"color":"dark_blue","text":"1, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 2"},"color":"red","text":"2, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 3"},"color":"dark_blue","text":"3, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 4"},"color":"red","text":"4, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 5"},"color":"dark_blue","text":"5, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 6"},"color":"red","text":"6, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 7"},"color":"dark_blue","text":"7, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 8"},"color":"red","text":"8, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 9"},"color":"dark_blue","text":"9, "},{"click_event":{"action":"run_command","command":"/trigger evswextinv_trig set 10"},"color":"red","text":"10"}]
+execute as @a[scores={evswextinv_trig=1..}] at @s run function evilonesw_extrainv:inventoryswap
+
+# if player sneak and jump, the manu pops
+scoreboard players set @a[scores={evswextinv_sneak=1..}] evswextinv_sneak 0
+scoreboard players set @a[scores={evswextinv_jump=1..}] evswextinv_jump 0

@@ -1,0 +1,10 @@
+{
+    "criteria": {
+        "mission_application_form_moved": {
+            "trigger": "minecraft:item_used_on_block"
+        }
+    },
+    "rewards": {
+        "function": "mission_wall:mission_sign_place_check/mission_sign_check_start"
+    }
+}
