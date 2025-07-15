@@ -1,1 +1,2 @@
 execute as @e[type=marker,tag=server_tele_sys] at @s run tag @a[distance=2..] remove tping
+execute at @a unless dimension minecraft:overworld unless dimension minecraft:the_nether unless dimension minecraft:the_end run effect give @p night_vision

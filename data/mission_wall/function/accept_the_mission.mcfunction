@@ -8,6 +8,7 @@ $execute if data block ~ ~ ~ components."minecraft:custom_data"{"reward_type":'n
         "reward_type":"$(reward_type)",\
         "uuid":$(uuid)\
     },\
+    can_place_on={blocks:"#minecraft:signs"},\
     lore=[\
         [{"text":"任務名稱：","color":"white","italic":false},"$(title)"],\
         [{"text":"任務內容：","color":"white","italic":false},"$(description)"],\
@@ -22,15 +23,16 @@ $execute if data block ~ ~ ~ components."minecraft:custom_data"{"reward_type":'x
     item_model="minecraft:skull_banner_pattern",\
     custom_data={\
         "description":"$(description)",\
-        "xp":"$(xp)",\
+        "xp":$(xp),\
         "reward_type":"$(reward_type)",\
         "uuid":$(uuid)\
     },\
+    can_place_on={blocks:"#minecraft:signs"},\
     lore=[\
         [{"text":"任務名稱：","color":"white","italic":false},"$(title)"],\
         [{"text":"任務內容：","color":"white","italic":false},"$(description)"],\
         [{"text":"獎勵類型：","color":"white","italic":false},{"translate":"mission.reward_type.$(reward_type)"}],\
-        [{"text":"獎勵內容：","color":"white","italic":false},{"translate":"mission.reward_context.$(reward_type)", with:["$(xp)"]}]\
+        [{"text":"獎勵內容：","color":"white","italic":false},{"translate":"mission.reward_context.$(reward_type)", with:[$(xp)]}]\
     ]\
 ]
 
@@ -40,15 +42,16 @@ $execute if data block ~ ~ ~ components."minecraft:custom_data"{"reward_type":'x
     item_model="minecraft:skull_banner_pattern",\
     custom_data={\
         "description":"$(description)",\
-        "xp_level":"$(xp_level)",\
+        "xp_level":$(xp_level),\
         "reward_type":"$(reward_type)",\
         "uuid":$(uuid)\
     },\
+    can_place_on={blocks:"#minecraft:signs"},\
     lore=[\
         [{"text":"任務名稱：","color":"white","italic":false},"$(title)"],\
         [{"text":"任務內容：","color":"white","italic":false},"$(description)"],\
         [{"text":"獎勵類型：","color":"white","italic":false},{"translate":"mission.reward_type.$(reward_type)"}],\
-        [{"text":"獎勵內容：","color":"white","italic":false},{"translate":"mission.reward_context.$(reward_type)", with:["$(xp_level)"]}]\
+        [{"text":"獎勵內容：","color":"white","italic":false},{"translate":"mission.reward_context.$(reward_type)", with:[$(xp_level)]}]\
     ]\
 ]
 
@@ -62,6 +65,7 @@ $execute if data block ~ ~ ~ components."minecraft:custom_data"{"reward_type":'i
         "reward_type":"$(reward_type)",\
         "uuid":$(uuid)\
     },\
+    can_place_on={blocks:"#minecraft:signs"},\
     lore=[\
         [{"text":"任務名稱：","color":"white","italic":false},"$(title)"],\
         [{"text":"任務內容：","color":"white","italic":false},"$(description)"],\

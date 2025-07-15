@@ -5,3 +5,4 @@ data modify block ~ ~ ~ front_text.has_glowing_text set value false
 title @s actionbar "任務已取消"
 item replace entity @s weapon.mainhand with air
 return run data modify block ~ ~ ~ components."minecraft:custom_data".status set value "waiting"
+return run data modify block ~ ~ ~ components."minecraft:custom_data".accepter set value "none"
