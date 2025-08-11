@@ -1,0 +1,13 @@
+{
+    "values": [
+        "minecraft:creeper",
+        "minecraft:zombie_villager",
+        "minecraft:phantom",
+        "minecraft:skeleton",
+        "minecraft:slime",
+        "minecraft:witch",
+        "minecraft:zombie",
+        "minecraft:enderman",
+        "minecraft:spider"
+    ]
+}

@@ -1,1 +1,1 @@
-execute as max_chen504 at @s run give @s knowledge_book[lore=['{"italic":false,"text":"使用後會..."}'],item_name='{"italic":false,"color":"red","text":"<name placeholder>"}',enchantments={levels:{infinity:1,mending:1}},custom_data={ItemOwner:"max_chen504",SkillType:"nirvana",cool_down:600}] 1
+execute as max_chen504 at @s run give @s knowledge_book[lore=['{"italic":false,"text":"使用後會..."}'],item_name='{"italic":false,"color":"red","text":"<name placeholder>"}',enchantments={infinity:1,mending:1},custom_data={ItemOwner:"max_chen504",SkillType:"nirvana",cool_down:600}] 1

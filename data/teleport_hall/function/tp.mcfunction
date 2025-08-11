@@ -2,5 +2,6 @@ execute as @a[tag=readytotp] at @e[tag=maintphall,type=marker] run particle drag
 execute as @a[tag=readytotp] at @s run particle dragon_breath ~ ~1 ~ 0.2 0.4 0.2 0.001 500 force
 execute as @a[tag=readytotp] at @e[tag=maintphall,type=marker] run spreadplayers ~ ~ 2 2 under 70 false @s
 execute as @a[tag=readytotp] at @e[tag=maintphall,type=marker] run playsound entity.player.teleport
+execute as @a[tag=readytotp] run advancement revoke @s only storage:enter_storage
 gamemode adventure @a[tag=readytotp,gamemode=survival]
 tag @a remove readytotp

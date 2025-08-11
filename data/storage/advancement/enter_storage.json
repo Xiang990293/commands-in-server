@@ -1,0 +1,30 @@
+{
+    "criteria": {
+        "entered_area": {
+            "trigger": "minecraft:location",
+            "conditions": {
+                "player": {
+                    "location": {
+                        "position": {
+                            "x": {
+                                "min": -71824,
+                                "max": -71811
+                            },
+                            "y": {
+                                "min": 43,
+                                "max": 63
+                            },
+                            "z": {
+                                "min": -72156,
+                                "max": -72145
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "storage:enter_storage_message"
+    }
+}

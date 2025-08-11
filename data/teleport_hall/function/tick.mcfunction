@@ -6,7 +6,7 @@ execute if score world so_th matches 1 if score world tpcooldown matches 1.. run
 execute store result bossbar minecraft:tp_cooldown value run scoreboard players get world tpcooldown
 
 ##傳送殿堂
-###座標：156.0 68.0 -163.0
+###座標：259.0 63.0 -200
 execute if score world so_th matches 1 if score world tpcooldown matches 1.. run scoreboard players remove world tpcooldown 1
 
 ## 傳送殿堂觸發條件偵測
@@ -31,7 +31,7 @@ execute at @e[type=minecraft:armor_stand,tag=tphall] as @e[distance=8..13,type=i
 ### 將傳送用盔甲座隱形
 execute as @e[tag=maintphall,type=armor_stand] run data merge entity @s {Invisible:1b}
 execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invisible:1b}
-### 使傳送用盔甲座無敵
+### 將傳送用盔甲座無敵
 execute as @e[tag=maintphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}
 execute as @e[tag=tphall,type=armor_stand] run data merge entity @s {Invulnerable:1b}
 

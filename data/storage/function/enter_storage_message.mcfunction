@@ -1,0 +1,1 @@
+tellraw @s ["歡迎進入倉庫！如果想要尋找物品，可以試試 ",{"text":"[全物品倉庫地圖]",color:"yellow",click_event:{action:"open_url",url:"https://rippou-ripple-web.fly.dev/rippou-ripple-server/survival/storage_map.html"}}]

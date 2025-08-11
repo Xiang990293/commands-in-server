@@ -13,6 +13,7 @@
 		"operater:tick",
 		"8192over1:tick",
 		"multi_world:tick",
-		"evilonesw_extrainv:tick"
+		"evilonesw_extrainv:tick",
+		"market:tick"
     ]
 }

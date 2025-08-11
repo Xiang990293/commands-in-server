@@ -36,13 +36,6 @@ bossbar set max_chen504_nirvana_cooldown color yellow
 bossbar set max_chen504_nirvana_cooldown players max_chen504
 bossbar set max_chen504_nirvana_cooldown max 600
 
-scoreboard objectives add tpcooldown dummy
-# execute if score world execute_count matches 1 run scoreboard players set world tpcooldown 0
-bossbar add tp_cooldown {"text":"傳送 冷卻","color":"blue"}
-bossbar set tp_cooldown color purple
-bossbar set tp_cooldown players @a
-bossbar set tp_cooldown max 1000
-
 #傳送殿堂的紙只給一個用
 scoreboard objectives add tppaper dummy
 execute if score world execute_count matches 1 run scoreboard players set @a tppaper 0

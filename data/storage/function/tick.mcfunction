@@ -3,7 +3,7 @@ execute as @e[type=minecraft:bat,tag=check_item] at @s positioned ~ ~1 ~ summon 
 kill @e[type=bat,tag=check_item]
 
 # check block and summon a marker of new block
-execute at @e[type=minecraft:bat,tag=check_block] positioned ~ ~1 ~ summon marker at @s as Xiang990293 run loot replace block -71890 32 -72224 container.0 mine ~ ~.126 ~ netherite_shovel[minecraft:enchantments={silk_touch:1}]
+execute at @e[type=minecraft:bat,tag=check_block] positioned ~ ~1 ~ summon marker at @s as @p run loot replace block -71890 32 -72224 container.0 mine ~ ~.126 ~ netherite_shovel[minecraft:enchantments={silk_touch:1}]
 execute at @e[type=minecraft:bat,tag=check_block] run data modify entity @n[type=minecraft:marker] data.item set from block -71890 32 -72224 Items[0].id
 data remove block -71890 32 -72224 Items
 kill @e[type=bat,tag=check_block]

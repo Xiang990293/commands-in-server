@@ -1,0 +1,1 @@
+$execute unless data storage storage:inventory_data Items[{id:"$(id)"}] run say @s
