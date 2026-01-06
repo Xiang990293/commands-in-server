@@ -5,36 +5,30 @@ execute unless score sky_scar sky_scar_skill_1_cooldown matches 0 run scoreboard
 bossbar add sky_scar_skill_1_cooldown {"text":"deja vu加速爆擊 冷卻","color":"blue"}
 bossbar set sky_scar_skill_1_cooldown color blue
 bossbar set sky_scar_skill_1_cooldown players sky_scar
-bossbar set sky_scar_skill_1_cooldown max 160
 
 scoreboard objectives add sky_scar_nirvana_cooldown dummy
 execute unless score sky_scar sky_scar_nirvana_cooldown matches 0 run scoreboard players set sky_scar sky_scar_nirvana_cooldown 0
 bossbar add sky_scar_nirvana_cooldown {"text":"雷神 冷卻","color":"blue"}
 bossbar set sky_scar_nirvana_cooldown color blue
 bossbar set sky_scar_nirvana_cooldown players sky_scar
-bossbar set sky_scar_nirvana_cooldown max 600
 
 scoreboard objectives add fzmy_nirvana_cooldown dummy
 execute unless score FzMY fzmy_nirvana_cooldown matches 0 run scoreboard players set FzMY fzmy_nirvana_cooldown 0
 bossbar add fzmy_nirvana_cooldown {"text":"惡食 冷卻","color":"red"}
 bossbar set fzmy_nirvana_cooldown color red
 bossbar set fzmy_nirvana_cooldown players FzMY
-bossbar set fzmy_nirvana_cooldown max 1600
 
 scoreboard objectives add xiang990293_nirvana_cooldown dummy
 execute unless score Xiang990293 xiang990293_nirvana_cooldown matches 0 run scoreboard players set Xiang990293 xiang990293_nirvana_cooldown 0
 bossbar add xiang990293_nirvana_cooldown {"text":"魔牙召喚 冷卻","color":"red"}
 bossbar set xiang990293_nirvana_cooldown color red
 bossbar set xiang990293_nirvana_cooldown players Xiang990293
-bossbar set xiang990293_nirvana_cooldown max 600
 
 scoreboard objectives add max_chen504_nirvana_cooldown dummy
-scoreboard objectives add max_trigger_throw minecraft.dropped:minecraft.redstone_block
 execute unless score max_chen504 max_chen504_nirvana_cooldown matches 0 run scoreboard players set max_chen504 max_chen504_nirvana_cooldown 0
 bossbar add max_chen504_nirvana_cooldown {"text":"奧特炸彈 冷卻","color":"yellow"}
 bossbar set max_chen504_nirvana_cooldown color yellow
 bossbar set max_chen504_nirvana_cooldown players max_chen504
-bossbar set max_chen504_nirvana_cooldown max 600
 
 #傳送殿堂的紙只給一個用
 scoreboard objectives add tppaper dummy

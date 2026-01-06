@@ -3,30 +3,30 @@ execute if score world so_opic matches 1 if entity @a[gamemode=!creative] run ef
 
 #冷卻條
 ##天痕
-###技能一的冷卻條狀態
+###技能一的冷卻條狀態###
 execute if score sky_scar sky_scar_skill_1_cooldown matches 0 run bossbar set minecraft:sky_scar_skill_1_cooldown visible false
 execute if score world so_sss1 matches 0 run bossbar set minecraft:sky_scar_skill_1_cooldown visible false
 execute if score world so_sss1 matches 1 if score sky_scar sky_scar_skill_1_cooldown matches 1.. run bossbar set minecraft:sky_scar_skill_1_cooldown visible true
 execute store result bossbar minecraft:sky_scar_skill_1_cooldown value run scoreboard players get sky_scar sky_scar_skill_1_cooldown
-###必殺技的冷卻條狀態
+###必殺技的冷卻條狀態###
 execute if score sky_scar sky_scar_nirvana_cooldown matches 0 run bossbar set minecraft:sky_scar_nirvana_cooldown visible false
 execute if score world so_ssn matches 0 run bossbar set minecraft:sky_scar_nirvana_cooldown visible false
 execute if score world so_ssn matches 1 if score sky_scar sky_scar_nirvana_cooldown matches 1.. run bossbar set minecraft:sky_scar_nirvana_cooldown visible true
 execute store result bossbar minecraft:sky_scar_nirvana_cooldown value run scoreboard players get sky_scar sky_scar_nirvana_cooldown
-##張博
-###必殺技的冷卻條狀態
+##張博##
+###必殺技的冷卻條狀態###
 execute if score FzMY fzmy_nirvana_cooldown matches 0 run bossbar set minecraft:fzmy_nirvana_cooldown visible false
 execute if score world so_fn matches 0 run bossbar set minecraft:fzmy_nirvana_cooldown visible false
 execute if score world so_fn matches 1 if score FzMY fzmy_nirvana_cooldown matches 1.. run bossbar set minecraft:fzmy_nirvana_cooldown visible true
 execute store result bossbar minecraft:fzmy_nirvana_cooldown value run scoreboard players get FzMY fzmy_nirvana_cooldown
-##越風
-###必殺技的冷卻條狀態
+##越風##
+###必殺技的冷卻條狀態###
 execute if score Xiang990293 xiang990293_nirvana_cooldown matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
 execute if score world so_xn matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
 execute if score world so_xn matches 1 if score Xiang990293 xiang990293_nirvana_cooldown matches 1.. run bossbar set minecraft:xiang990293_nirvana_cooldown visible true
 execute store result bossbar minecraft:xiang990293_nirvana_cooldown value run scoreboard players get Xiang990293 xiang990293_nirvana_cooldown
 ##家緯
-###必殺技的冷卻條狀態
+###必殺技的冷卻條狀態###
 execute if score Xiang990293 xiang990293_nirvana_cooldown matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
 execute if score world so_xn matches 0 run bossbar set minecraft:xiang990293_nirvana_cooldown visible false
 execute if score world so_xn matches 1 if score Xiang990293 xiang990293_nirvana_cooldown matches 1.. run bossbar set minecraft:xiang990293_nirvana_cooldown visible true

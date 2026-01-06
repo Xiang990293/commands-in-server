@@ -18,4 +18,3 @@ function skill:xiang990293_nirvana/first
 function skill:xiang990293_nirvana/first
 function skill:xiang990293_nirvana/first
 function skill:xiang990293_nirvana/first
-scoreboard players set Xiang990293 xiang990293_nirvana_cooldown 200

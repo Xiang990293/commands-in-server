@@ -1,3 +1,2 @@
 kill @e[predicate=skill:sky_scar_skill_1_trigger_item_check]
 function skill:sky_scar_skill_1/buff
-scoreboard players set sky_scar sky_scar_skill_1_cooldown 160

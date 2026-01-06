@@ -1,1 +1,35 @@
-execute as max_chen504 at @s run give @s knowledge_book[lore=['{"italic":false,"text":"使用後會..."}'],item_name='{"italic":false,"color":"red","text":"<name placeholder>"}',enchantments={infinity:1,mending:1},custom_data={ItemOwner:"max_chen504",SkillType:"nirvana",cool_down:600}] 1
+execute as max_chen504 at @s run \
+    give @s knowledge_book[\
+        lore=[\
+            {\
+                "italic":false,\
+                "text":"使用後，玩家將會持續50秒抗性和5秒發光，並立即切換為靈魂狀態，持續10秒"\
+            },\
+            {\
+                "italic":false,\
+                "text":"10格以內的所有實體皆會死亡"\
+            },\
+            {\
+                "italic":false,\
+                "text":"30格以內的實體剩下一滴血"\
+            },\
+            {\
+                "italic":false,\
+                "text":"靈魂狀態結束後，玩家將會持續110秒虛弱、挖掘疲勞、黑暗及夜視"\
+            }\
+        ],\
+        item_name={\
+            "italic":false,\
+            "color":"red",\
+            "text":"奥特炸彈"\
+        },\
+        enchantments={\
+            infinity:1,\
+            mending:1\
+        },\
+        custom_data={\
+            ItemOwner:"max_chen504",\
+            SkillType:"nirvana",\
+            cool_down:600\
+        }\
+    ]
