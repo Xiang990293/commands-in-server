@@ -1,0 +1,1 @@
+$execute store result storage multi_world:player_effect_config $(UUID).body_scale double 1 run attribute @p scale base get

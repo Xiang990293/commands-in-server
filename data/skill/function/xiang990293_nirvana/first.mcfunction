@@ -9,4 +9,5 @@ execute at Xiang990293 run summon minecraft:evoker_fangs ~ ~ ~-2 {Rotation:[180f
 execute at Xiang990293 run summon minecraft:evoker_fangs ~1.4 ~ ~-1.4 {Rotation:[225f,0f]}
 execute at Xiang990293 run summon minecraft:evoker_fangs ~2 ~ ~ {Rotation:[270f,0f]}
 execute at Xiang990293 run summon minecraft:evoker_fangs ~1.4 ~ ~1.4 {Rotation:[315f,0f]}
-function skill:xiang990293_nirvana/second
+execute at Xiang990293 as @e[name=!Xiang990293,distance=..3] run effect give @s wither 20 4 true
+schedule function skill:xiang990293_nirvana/second 2t append
