@@ -1,5 +1,5 @@
 # ---------- 基礎設定 ----------
-gamerule commandBlockOutput false
+# gamerule command_block_output false
 # ---------- 計分板板 ----------
 ##========== 基本動作 ==========
 scoreboard objectives add s1 minecraft.custom:minecraft.crouch_one_cm

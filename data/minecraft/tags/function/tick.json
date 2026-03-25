@@ -14,6 +14,7 @@
 		"8192over1:tick",
 		"multi_world:tick",
 		"evilonesw_extrainv:tick",
-		"market:tick"
+		"market:tick",
+		"server_counter:pet_counter"
     ]
 }

@@ -24,7 +24,7 @@
             "label_visible": true,
             "type": "text",
             "initial": "0.0",
-            "max_length": 10
+            "max_length": 15
         },
         {
             "key": "position_y",
@@ -32,7 +32,7 @@
             "label_visible": true,
             "type": "text",
             "initial": "0.0",
-            "max_length": 10
+            "max_length": 15
         },
         {
             "key": "position_z",
@@ -40,7 +40,7 @@
             "label_visible": true,
             "type": "text",
             "initial": "0.0",
-            "max_length": 10
+            "max_length": 15
         }
     ],
     "columns": 1,

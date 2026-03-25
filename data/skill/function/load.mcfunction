@@ -67,7 +67,7 @@ execute if score world execute_count matches 1 run scoreboard players set world 
 
 #防爆用
 scoreboard objectives add mobgriefing dummy
-execute store result score world mobgriefing run gamerule mobGriefing
+execute store result score world mobgriefing run gamerule mob_griefing
 
 #將生命值改回預設值用
 scoreboard objectives add health_default dummy

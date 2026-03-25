@@ -24,7 +24,7 @@ tellraw @a {"translate":"reload.message.resource_pack"}
 scoreboard objectives add daytime dummy
 
 #遊戲規則設定(創建新世界時適用)
-gamerule commandBlockOutput false
+gamerule command_block_output false
 
 #設定載入
 

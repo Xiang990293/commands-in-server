@@ -1,7 +1,15 @@
+# minecart A
 summon chest_minecart ~ ~-5 ~ {Invulnerable:1b,Tags:["extrainvgive","extrainvboth"],NoGravity:1b}
+# minecart B
 summon chest_minecart ~ ~-6 ~ {Invulnerable:1b,Tags:["extrainvtake","extrainvboth"],NoGravity:1b}
+# minecart C
+summon chest_minecart ~ ~-7 ~ {Invulnerable:1b,Tags:["extraeqipgive","extrainvboth"],NoGravity:1b}
+# minecart D
+summon chest_minecart ~ ~-8 ~ {Invulnerable:1b,Tags:["extraeqiptake","extrainvboth"],NoGravity:1b}
+
 playsound minecraft:ui.button.click ambient @s ~ ~ ~ 1 1
 
+# set to 1 if evswextinv_lag is null
 execute unless score @s evswextinv_lag matches 0.. run scoreboard players set @s evswextinv_lag 1
 # tp @e[type=chest_minecart,tag=extrainvboth] ~ -100 ~
 # kill @e[type=chest_minecart,tag=extrainvboth]
@@ -10,7 +18,7 @@ execute unless score @s evswextinv_lag matches 0.. run scoreboard players set @s
 # scoreboard players set @s[scores={evswextinv_trig=1..}] evswextinv_trig 0
 # return run say @s
 
-# copy items from player inventory to bottoom chest minecart below
+# items: player Inv > minecart B
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.0 from entity @s container.9
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.1 from entity @s container.10
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.2 from entity @s container.11
@@ -38,38 +46,41 @@ item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=neare
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.24 from entity @s container.33
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.25 from entity @s container.34
 item replace entity @e[type=minecraft:chest_minecart,tag=extrainvtake,sort=nearest,limit=1] container.26 from entity @s container.35
+# items: player Equip > minecart D
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.0 from entity @s container.0
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.1 from entity @s container.1
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.2 from entity @s container.2
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.3 from entity @s container.3
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.4 from entity @s container.4
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.5 from entity @s container.5
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.6 from entity @s container.6
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.7 from entity @s container.7
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.8 from entity @s container.8
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.9 from entity @s armor.head
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.10 from entity @s armor.chest
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.11 from entity @s armor.legs
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.12 from entity @s armor.feet
+item replace entity @e[type=minecraft:chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] container.13 from entity @s weapon.offhand
 
 # get player uuid for storing inventories individually using uuid as tags key of data storage
 data modify storage extrainvdata:uid uid0 set from entity @s UUID[0]
 data modify storage extrainvdata:uid uid1 set from entity @s UUID[1]
 data modify storage extrainvdata:uid uid2 set from entity @s UUID[2]
 data modify storage extrainvdata:uid uid3 set from entity @s UUID[3]
+execute store result storage extrainvdata:uid lag int 1 run scoreboard players get @s evswextinv_lag
+execute store result storage extrainvdata:uid trig int 1 run scoreboard players get @s evswextinv_trig
 
-# copy items from player inventory (copied to bottom chest minecart) to player's own data storage
-execute if entity @s[scores={evswextinv_lag=1}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=1] run function evilonesw_extrainv:data_from_inv/i1 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=2}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=2] run function evilonesw_extrainv:data_from_inv/i2 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=3}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=3] run function evilonesw_extrainv:data_from_inv/i3 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=4}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=4] run function evilonesw_extrainv:data_from_inv/i4 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=5}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=5] run function evilonesw_extrainv:data_from_inv/i5 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=6}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=6] run function evilonesw_extrainv:data_from_inv/i6 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=7}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=7] run function evilonesw_extrainv:data_from_inv/i7 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=8}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=8] run function evilonesw_extrainv:data_from_inv/i8 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=9}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=9] run function evilonesw_extrainv:data_from_inv/i9 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_lag=10}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=10] run function evilonesw_extrainv:data_from_inv/i10 with storage extrainvdata:uid
+# items: minecart B > player[uid].inv
+execute if entity @s[scores={evswextinv_lag=1..10}] as @e[type=chest_minecart,tag=extrainvtake,sort=nearest,limit=1] run function evilonesw_extrainv:data_from_inv/i with storage extrainvdata:uid
+# items: minecart D > player[uid].equip
+execute if entity @s[scores={evswextinv_lag=1..10}] as @e[type=chest_minecart,tag=extraeqiptake,sort=nearest,limit=1] run function evilonesw_extrainv:data_from_inv/-i with storage extrainvdata:uid
 
-# copy items from player's own data storage to player inventory (copied to top chest minecart)
-execute if entity @s[scores={evswextinv_trig=1}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=1] run function evilonesw_extrainv:inv_from_data/1 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=2}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=2] run function evilonesw_extrainv:inv_from_data/2 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=3}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=3] run function evilonesw_extrainv:inv_from_data/3 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=4}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=4] run function evilonesw_extrainv:inv_from_data/4 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=5}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=5] run function evilonesw_extrainv:inv_from_data/5 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=6}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=6] run function evilonesw_extrainv:inv_from_data/6 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=7}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=7] run function evilonesw_extrainv:inv_from_data/7 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=8}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=8] run function evilonesw_extrainv:inv_from_data/8 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=9}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=9] run function evilonesw_extrainv:inv_from_data/9 with storage extrainvdata:uid
-execute if entity @s[scores={evswextinv_trig=10}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=10] run function evilonesw_extrainv:inv_from_data/10 with storage extrainvdata:uid
+# items: player[uid].inv > minecart A
+execute if entity @s[scores={evswextinv_trig=1..10}] as @e[type=chest_minecart,tag=extrainvgive,sort=nearest,limit=1] run function evilonesw_extrainv:inv_from_data/1 with storage extrainvdata:uid
+# items: player[uid].equip > minecart C
+execute if entity @s[scores={evswextinv_trig=1..10}] as @e[type=chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] run function evilonesw_extrainv:inv_from_data/-1 with storage extrainvdata:uid
 
-# replace items from top chest minecart below to player inventory
+# items: minecart A > player Inv
 item replace entity @s container.9 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.0
 item replace entity @s container.10 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.1
 item replace entity @s container.11 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.2
@@ -97,11 +108,26 @@ item replace entity @s container.32 from entity @e[type=minecraft:chest_minecart
 item replace entity @s container.33 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.24
 item replace entity @s container.34 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.25
 item replace entity @s container.35 from entity @e[type=minecraft:chest_minecart,tag=extrainvgive,sort=nearest,limit=1] container.26
+# items: minecart C > player Equip
+item replace entity @s container.0 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.0
+item replace entity @s container.1 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.1
+item replace entity @s container.2 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.2
+item replace entity @s container.3 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.3
+item replace entity @s container.4 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.4
+item replace entity @s container.5 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.5
+item replace entity @s container.6 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.6
+item replace entity @s container.7 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.7
+item replace entity @s container.8 from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.8
+item replace entity @s armor.head from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.9
+item replace entity @s armor.chest from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.10
+item replace entity @s armor.legs from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.11
+item replace entity @s armor.feet from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.12
+item replace entity @s weapon.offhand from entity @e[type=minecraft:chest_minecart,tag=extraeqipgive,sort=nearest,limit=1] container.13
 
 
 tp @e[type=chest_minecart,tag=extrainvboth] ~ -100 ~
 kill @e[type=chest_minecart,tag=extrainvboth]
 
-# replace the 
+# evswextinv_lag < evswextinv_trig
 scoreboard players operation @s evswextinv_lag = @s evswextinv_trig
 scoreboard players set @s[scores={evswextinv_trig=1..}] evswextinv_trig 0

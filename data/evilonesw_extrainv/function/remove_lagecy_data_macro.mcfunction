@@ -1,0 +1,10 @@
+$data remove storage evswextrainv:1 $(UUID).inv
+$data remove storage evswextrainv:2 $(UUID).inv
+$data remove storage evswextrainv:3 $(UUID).inv
+$data remove storage evswextrainv:4 $(UUID).inv
+$data remove storage evswextrainv:5 $(UUID).inv
+$data remove storage evswextrainv:6 $(UUID).inv
+$data remove storage evswextrainv:7 $(UUID).inv
+$data remove storage evswextrainv:8 $(UUID).inv
+$data remove storage evswextrainv:9 $(UUID).inv
+$data remove storage evswextrainv:10 $(UUID).inv
