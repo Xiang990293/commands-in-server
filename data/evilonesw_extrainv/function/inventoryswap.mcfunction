@@ -7,7 +7,7 @@ summon chest_minecart ~ ~-7 ~ {Invulnerable:1b,Tags:["extraeqipgive","extrainvbo
 # minecart D
 summon chest_minecart ~ ~-8 ~ {Invulnerable:1b,Tags:["extraeqiptake","extrainvboth"],NoGravity:1b}
 
-playsound minecraft:ui.button.click ambient @s ~ ~ ~ 1 1
+playsound minecraft:block.note_block.bell ambient @s ~ ~ ~ 1 1
 
 # set to 1 if evswextinv_lag is null
 execute unless score @s evswextinv_lag matches 0.. run scoreboard players set @s evswextinv_lag 1

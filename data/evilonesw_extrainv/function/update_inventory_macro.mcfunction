@@ -1,0 +1,1 @@
+data modify storage extrainvdata:player_inventory_tracker $(UUID).dialog.body[0].item.components."minecraft:container" set from entity @s Inventory

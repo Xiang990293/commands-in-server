@@ -1,0 +1,1 @@
+scoreboard players set @s evswextinv_lag 1

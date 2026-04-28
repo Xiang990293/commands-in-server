@@ -1,0 +1,7 @@
+{
+	"values": [
+		"researcher_pack:command_minigame_sans/tick",
+		"researcher_pack:tick",
+		"item_ager:tick"
+	]
+}

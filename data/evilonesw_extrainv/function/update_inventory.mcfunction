@@ -1,0 +1,1 @@
+function evilonesw_extrainv:update_inventory_macro with entity @s
