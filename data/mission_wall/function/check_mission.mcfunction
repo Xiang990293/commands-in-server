@@ -1,7 +1,7 @@
 tellraw @p [\
     {"text":"任務發怖："},{"nbt":"front_text.messages[3]","block":"~ ~ ~",interpret:true,color:"white"},"\n",\
-    {"text":"任務名稱："},{"nbt":"front_text.messages[1]","block":"~ ~ ~"},"\n",\
-    {"text":"任務內容："},{"nbt":"components.'minecraft:custom_data'.description","block":"~ ~ ~"}\
+    {"text":"任務名稱："},{"nbt":"front_text.messages[1]","block":"~ ~ ~",interpret:true},"\n",\
+    {"text":"任務內容：\n"},{"nbt":"components.'minecraft:custom_data'.description","block":"~ ~ ~",interpret:true,color:green}\
 ]
 execute if data block ~ ~ ~ components.'minecraft:custom_data'{"reward_type":'no_reward'} run return run tellraw @p "任務獎勵? 沒有"
 $execute if data block ~ ~ ~ components.'minecraft:custom_data'{"reward_type":'xp'} run return run tellraw @p [{"text":"任務獎勵："},{"translate":"mission.reward_context.$(reward_type)", with:["$(xp)"]}]
