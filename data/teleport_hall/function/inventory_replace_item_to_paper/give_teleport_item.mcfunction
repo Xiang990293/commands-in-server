@@ -4,25 +4,6 @@ execute \
     run clear \
         @p \
         paper[\
-            minecraft:lore=[\
-                {\
-                    "italic":false,\
-                    "text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"\
-                }\
-            ],\
-            minecraft:item_name={\
-                "italic":false,\
-                "color":"aqua",\
-                "text":"傳送卷軸"\
-            }\
-        ]
-        
-execute \
-    at @e[type=minecraft:armor_stand,tag=tphall] \
-    as @a[distance=..13,scores={tppaper=0},sort=nearest,tag=!tphalltped] \
-    run give \
-        @s \
-        paper[\
             lore=[\
                 {\
                     "italic":false,\
@@ -42,5 +23,10 @@ execute \
                 cool_down:1000\
             }\
         ]
+        
+execute \
+    at @e[type=minecraft:armor_stand,tag=tphall] \
+    as @a[distance=..13,scores={tppaper=0},sort=nearest,tag=!tphalltped] \
+    run function teleport_hall:inventory_replace_item_to_paper/find_empty
 
 # give @s paper[lore=['{"italic":false,"text":"使用後會將站在傳送區域內的所有玩家一併傳送至傳送大廳"}'],item_name='{"italic":false,"color":"red","text":"魔牙召喚"}',enchantments={levels:{infinity:1,mending:1}},custom_data={ItemOwner:"xiang990293",SkillType:"nirvana",cool_down:200}] 1
