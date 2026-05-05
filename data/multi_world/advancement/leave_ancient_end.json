@@ -1,0 +1,18 @@
+{
+    "criteria": {
+        "leave_ancient_end": {
+            "trigger": "minecraft:changed_dimension",
+            "conditions": {
+                "from": "multi_world:ancient_end"
+            }
+        }
+    },
+    "requirements": [
+        [
+            "leave_ancient_end"
+        ]
+    ],
+    "rewards": {
+        "function": "multi_world:leave_ancient_end"
+    }
+}

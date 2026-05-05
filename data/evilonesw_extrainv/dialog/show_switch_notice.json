@@ -1,0 +1,14 @@
+{
+    "type": "confirmation",
+    "title": "交換背包",
+    "no": {
+        "label": "取消"
+    },
+    "yes": {
+        "label": "確定",
+        "action": {
+            "type": "run_command",
+            "command": "advancement grant @s only evilonesw_extrainv:show_switch_dialog"
+        }
+    }
+}

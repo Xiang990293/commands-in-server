@@ -2,7 +2,6 @@
 	"type": "minecraft:the_end",
 	"generator": {
 		"biome_source":{
-			"large_biomes": false,
 			"type": "minecraft:the_end"
 		},
 		"type": "minecraft:noise",
