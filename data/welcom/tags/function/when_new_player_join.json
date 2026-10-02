@@ -1,6 +1,6 @@
 {
     "values": [
-        "teleport_hall:change_dimension_to_others",
+        "change_dim:show_message_entry",
         "skill:when_new_player_join"
     ]
 }

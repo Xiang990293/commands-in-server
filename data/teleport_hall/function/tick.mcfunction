@@ -1,13 +1,12 @@
 #冷卻條
 bossbar set minecraft:tp_cooldown players @a
 execute if score world tpcooldown matches 0 run bossbar set minecraft:tp_cooldown visible false
-execute if score world so_th matches 0 run bossbar set minecraft:tp_cooldown visible false
-execute if score world so_th matches 1 if score world tpcooldown matches 1.. run bossbar set minecraft:tp_cooldown visible true
+execute if score world tpcooldown matches 1.. run bossbar set minecraft:tp_cooldown visible true
 execute store result bossbar minecraft:tp_cooldown value run scoreboard players get world tpcooldown
 
 ##傳送殿堂
 ###座標：259.0 63.0 -200
-execute if score world so_th matches 1 if score world tpcooldown matches 1.. run scoreboard players remove world tpcooldown 1
+execute if score world tpcooldown matches 1.. run scoreboard players remove world tpcooldown 1
 
 ## 傳送殿堂觸發條件偵測
 ### 傳送殿堂回收紙
