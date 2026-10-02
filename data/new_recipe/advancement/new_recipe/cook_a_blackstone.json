@@ -20,7 +20,7 @@
 		"getblackstone": {
 			"trigger": "minecraft:recipe_unlocked",
 			"conditions": {
-				"recipe": "new_recipe:blackstone"
+				"recipes": "new_recipe:blackstone"
 			}
 		}
 	},

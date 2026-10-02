@@ -4,8 +4,12 @@
             "trigger": "minecraft:player_interacted_with_entity",
             "conditions": {
                 "entity": {
-                    "type": "minecraft:interaction",
-                    "nbt": "{Tags:[\"rewards_slot\"]}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{Tags:[\"rewards_slot\"]}",
+                        "minecraft:entity_type": "minecraft:interaction"
+                    }
                 }
             }
         }

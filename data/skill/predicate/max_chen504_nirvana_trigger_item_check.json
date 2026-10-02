@@ -1,14 +1,14 @@
 {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"max_chen504\",SkillType:\"nirvana\",cool_down:600}}}}",
-		"distance":	{
+		"distance": {
 			"absolute": {
 				"min": 0,
 				"max": 2
 			}
-		}
+		},
+		"minecraft:nbt": "{Item:{id:\"knowledge_book\",components:{\"minecraft:custom_data\":{ItemOwner:\"max_chen504\",SkillType:\"nirvana\",cool_down:600}}}}",
+		"minecraft:entity_type": "minecraft:item"
 	}
 }

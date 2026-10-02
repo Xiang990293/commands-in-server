@@ -4,7 +4,11 @@
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "player": {
-                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"no_reward\"}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"no_reward\"}}}}"
+                    }
                 }
             }
         },
@@ -12,7 +16,11 @@
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "player": {
-                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp\"}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp\"}}}}"
+                    }
                 }
             }
         },
@@ -20,7 +28,11 @@
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "player": {
-                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp_level\"}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"xp_level\"}}}}"
+                    }
                 }
             }
         },
@@ -28,7 +40,11 @@
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "player": {
-                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"item\"}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{reward_type:\"item\"}}}}"
+                    }
                 }
             }
         }

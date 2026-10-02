@@ -1,7 +1,7 @@
 {
-	"condition": "minecraft:block_state_property",
-	"block": "minecraft:bamboo_trapdoor",
-	"properties": {
+	"type": "minecraft:match_block",
+	"blocks": "minecraft:bamboo_trapdoor",
+	"state": {
 		"powered": "true"
 	}
 }

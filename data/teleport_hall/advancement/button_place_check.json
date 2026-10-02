@@ -4,7 +4,11 @@
             "trigger": "minecraft:placed_block",
             "conditions": {
                 "player": {
-                    "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{type:\"endpoint_button\"}}}}"
+                    "type": "minecraft:entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "nbt": "{SelectedItem:{components:{\"minecraft:custom_data\":{type:\"endpoint_button\"}}}}"
+                    }
                 }
             }
         }

@@ -15,15 +15,15 @@
         "announce_to_chat": true,
         "hidden": false
     },
-	"parent": "new_recipe:new_recipe/cook_a_blackstone",
-	"criteria": {
+    "parent": "new_recipe:new_recipe/cook_a_blackstone",
+    "criteria": {
         "getendstone": {
-			"trigger": "minecraft:recipe_unlocked",
-			"conditions": {
-				"recipe": "new_recipe:end_stone"
-			}
-		}
-	},
+            "trigger": "minecraft:recipe_unlocked",
+            "conditions": {
+                "recipes": "new_recipe:end_stone"
+            }
+        }
+    },
     "requirements": [
         [
             "getendstone"

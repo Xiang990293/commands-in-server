@@ -1,14 +1,14 @@
 {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
 	"predicate": {
-		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"sky_scar\",SkillType:\"skill_1\",cool_down:160}}}}",
-		"distance":	{
+		"distance": {
 			"absolute": {
 				"min": 0,
 				"max": 2
 			}
-		}
+		},
+		"minecraft:entity_type": "minecraft:item",
+		"minecraft:nbt": "{Item:{id:\"slime_ball\",components:{\"minecraft:custom_data\":{ItemOwner:\"sky_scar\",SkillType:\"skill_1\",cool_down:160}}}}"
 	}
 }

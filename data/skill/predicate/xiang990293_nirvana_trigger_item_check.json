@@ -1,14 +1,14 @@
 {
-	"condition": "minecraft:entity_properties",
+	"type": "minecraft:entity_properties",
 	"entity": "this",
-	"predicate": {	
-		"type": "minecraft:item",
-		"nbt": "{Item:{components:{\"minecraft:custom_data\":{ItemOwner:\"xiang990293\",SkillType:\"nirvana\",cool_down:200}}}}",
-		"distance":	{
+	"predicate": {
+		"distance": {
 			"absolute": {
 				"min": 0,
 				"max": 2
 			}
-		}
+		},
+		"minecraft:nbt": "{Item:{id:\"gray_glazed_terracotta\",components:{\"minecraft:custom_data\":{ItemOwner:\"xiang990293\",SkillType:\"nirvana\",cool_down:200}}}}",
+		"minecraft:entity_type": "minecraft:item"
 	}
 }
